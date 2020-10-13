@@ -31,7 +31,7 @@ Copiamos la clave para añadirla a Github. En github nos vamos a configuración 
 
 ![SSH Key.](https://github.com/cr13/project_CC/blob/main/doc/img/h0/SSH_KEY.png "Clave SSH.")
 
-[Ref]([https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+[Ref](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 #### Personalizamos git con nuestros datos y configuramos correctamente nuestro repositorio fork
 
