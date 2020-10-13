@@ -29,6 +29,28 @@ ssh-add -L
 ```
 Copiamos la clave para añadirla a Github. En github nos vamos a configuración y pulsamos en SSH and GPG keys. Añadimos una SSH Keys, definimos un nombre identificativo y pegamos nuestra clave publica, una vez rellenado los dos campos pulsamos en add SSH key.
 
-![SSH Key.]([https://github.com/cr13/project_CC](https://github.com/cr13/project_CC/doc/img/h0/SSH_KEY.png "Clave SSH.")
+![SSH Key.](https://github.com/cr13/project_CC/blob/main/doc/img/h0/SSH_KEY.png "Clave SSH.")
 
-[Ref]([https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+[Ref]([https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+#### Personalizamos git con nuestros datos y configuramos correctamente nuestro repositorio fork
+
+```shell
+
+cristobal@cristobal-PC:~/Escritorio/CC/CC-20-21$ git config pull.rebase true
+cristobal@cristobal-PC:~/Escritorio/CC/CC-20-21$ git config --list
+user.email=cristobal111992@gmail.com
+user.name=Cristóbal
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=git@github.com:cr13/CC-20-21.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+remote.upstream.url=https://github.com/JJ/CC-20-21
+remote.upstream.fetch=+refs/heads/*:refs/remotes/upstream/*
+pull.rebase=true
+
+```
