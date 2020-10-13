@@ -54,3 +54,15 @@ remote.upstream.fetch=+refs/heads/*:refs/remotes/upstream/*
 pull.rebase=true
 
 ```
+
+#### Two-factor authentication
+
+Para finalizar vamos a habilitar la autentificación en dos factores de gitHub. Para ello, nos vamos a configuración --> seguridad de la cuenta y en "Two-factor authentication" pulsamos el botón verde "Enable Two-factor authentication".
+
+Para ello vamos a necesitar instalar una aplicación en nuestro smartphone o tablet. Se recomienda utilziar Authy, 1Password o LastPassAuthenticator. Yo he utilizado la primera opción y he seguido los pasos indicados en el [tutorial](https://authy.com/guides/github/)
+
+
+
+Two-factor-authentication.png
+
+![Two-factor authentication](https://github.com/cr13/project_CC/blob/main/doc/img/h0/Two-factor-authentication.png)
