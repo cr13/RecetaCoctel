@@ -13,4 +13,4 @@ API la cual nos devolvera los ingredientes del coctel buscado. En principio no s
 
 ## Arquitectura
 
-Se utilizara una arquitectura basada en microservicios, ya que nos dara la posibilidad de trabajar con ellos de forma independiente. En principio vamos a utilizar un microservicio para interactuar con la API y otro para el forntend. Además se van a implementar un microservicio de log y el microservicio de configuración remota.
+En el proyecto nos vamos a basar en una arquitectura basada en microservicios, vamos a intentar implementar varios microservicios. En principio vamos a utilizar un microservicio para interactuar con la API y otro para el forntend. Además se van a implementar un microservicio de log y el microservicio de configuración remota.
