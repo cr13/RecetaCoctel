@@ -2,7 +2,7 @@
 
 Proyecto para la asignatura de Cloud Computing I 
 
-Para la correcta configuración de github se han realizado los pasos indicados en la [documentación del hito0](https://github.com/cr13/RecetaCoctel/blob/main/doc/doc_H0.md)
+Para la correcta configuración de github se han realizado los pasos indicados en la [documentación](https://github.com/cr13/RecetaCoctel/blob/main/doc/doc_H0.md)
 
 ## Descripción del problema
 
