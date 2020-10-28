@@ -22,4 +22,6 @@ En el proyecto nos vamos a basar en una arquitectura basada en microservicios. L
 
 A continuación podemos ver el diagrama de la arquitectura:
 
-![Diagrama de la arquitectura](img/diagramaRC.png)
+![Diagrama de la arquitectura](img/diagrama_RC.png)
+
+Toda la comunicación entre los microservicios y la APi GateWay se realizarán mediante una API Rest
