@@ -13,4 +13,19 @@ API la cual nos devolvera los ingredientes del coctel buscado. En principio no s
 
 ## Arquitectura
 
-En el proyecto nos vamos a basar en una arquitectura basada en microservicios, vamos a intentar implementar varios microservicios. En principio vamos a utilizar un microservicio para interactuar con la API y otro para el forntend. Además se van a implementar un microservicio de log y el microservicio de configuración remota.
+La arquitectura del proyecto puede verse en el siguiente [enlace.](https://cr13.github.io/RecetaCoctel/)
+
+## Lenguaje
+
+Los microservicios de este proyecto se va a realizar en NodeJS.
+
+## Bases de datos
+
+- DB Recetas: Esta base de datos va contener todas las recetas y sus correspondientes valoraciones
+- BD Perfiles usuario: Esta BD va contener toda la información relacionada con el perfil del usuario.
+
+## Clases desarrolladas
+
+## Planificación del proyecto (ROADMAP)
+
+## Historias de usuario
