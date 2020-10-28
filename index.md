@@ -22,4 +22,4 @@ En el proyecto nos vamos a basar en una arquitectura basada en microservicios. L
 
 A continuación podemos ver el diagrama de la arquitectura:
 
-![Diagrama de la arquitectura](img/recetacoctel.png)
+![Diagrama de la arquitectura](img/diagramaRC.png)
