@@ -29,6 +29,8 @@ Hasta el momento se han desarrollado dos clases
 - [Recetas](https://github.com/cr13/RecetaCoctel/blob/main/src/Recetas.js)
 - [Ingredientes](https://github.com/cr13/RecetaCoctel/blob/main/src/Ingredientes.js)
 
+![Verificación de las clases](https://github.com/cr13/RecetaCoctel/tree/main/doc/img/h1/verificacionclases.png)
+
 
 ## Planificación del proyecto (ROADMAP)
 
