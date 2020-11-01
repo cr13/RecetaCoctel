@@ -2,7 +2,7 @@
 layout: default
 ---
 
-##### [Inicio](./) | [Roadmap](./Roadmap.html) 
+##### [Inicio](./) | [Roadmap](./Roadmap.html) | [HU](./hu.html)
 
 # Bienvenido al buscador de recetas
 

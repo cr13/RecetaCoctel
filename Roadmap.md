@@ -1,10 +1,9 @@
 ---
 layout: default
 title: Roadmap
-nav_order: 5
 ---
 
-##### [Inicio](./) | [Roadmap](./Roadmap.html) 
+##### [Inicio](./) | [Roadmap](./Roadmap.html) | [HU](./hu.html)
 
 
 # Planificación del proyecto
