@@ -4,7 +4,7 @@ title: Roadmap
 nav_order: 5
 ---
 
-#### [Inicio](./) | [Roadmap](./Roadmap.html) | [Tools](./herramientas.html)
+##### [Inicio](./) | [Roadmap](./Roadmap.html) 
 
 
 # Planificación del proyecto
@@ -28,30 +28,37 @@ Puesta a punta de la BD, incluyendo alguna receta para poder comenzar con la pri
 
 ## Primera fase
 
-HU1 - Consulta de Receta user stories
+En esta primera fase se va a desarrollar un microservicio el cual va tener la función de localizar una receta dentro de la base de datos y devolvera los resultados encontrados.
+
+#### Historia de Usuario
+
+	-	[HU1 - Consulta de Receta user stories](https://github.com/cr13/RecetaCoctel/issues/5)
 
 ## Segunda fase
 
-HU2 - Insertar recetas user stories
+En esta segunda fase se desarrollara un microservicio que se encague de realizar las comunicaciónde de edicción con la base de datos en función de la acción dada por el usuario.
 
-HU3 - Modificación de recetas user stories
+	-	[HU2 - Insertar recetas user stories](https://github.com/cr13/RecetaCoctel/issues/6)
 
-HU4 - Eliminar Recetas user stories
+	-	[HU3 - Modificación de recetas user stories](https://github.com/cr13/RecetaCoctel/issues/7)
+
+	-	[HU4 - Eliminar Recetas user stories](https://github.com/cr13/RecetaCoctel/issues/8)
 
 ## Tercera fase
 
-HU5 - Valorar recetas user stories
+En la tercera fase, se desarrollara un microservicio que se encargara de comunicar al usuario con la BD de forma que el usuario podra introducir una valoración de la receta.
+
+	-	[HU5 - Valorar recetas user stories](https://github.com/cr13/RecetaCoctel/issues/9)
 
 
 ## Cuarta fase
 
-HU6 - Mostar un top 10 de las mejores recetas user stories
+Esta fase podrá adelantarse y desarrollarse acontinuación de la primera, en esta fase se desarrollara un microservicio que listará las recetas según la necesidad requerida.
 
-HU7 - Mostrar recetas más recientes user stories
+	-	[HU6 - Mostar un top 10 de las mejores recetas user stories](https://github.com/cr13/RecetaCoctel/issues/10)
 
-
-
-
+	-	[HU7 - Mostrar recetas más recientes user stories](https://github.com/cr13/RecetaCoctel/issues/11)
 
 
-[back](./)
+
+[UP](./Roadmap.html)

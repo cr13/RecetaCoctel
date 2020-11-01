@@ -2,7 +2,7 @@
 layout: default
 ---
 
-#### [Inicio](./) | [Roadmap](./Roadmap.html) | [Tools](./herramientas.html)
+##### [Inicio](./) | [Roadmap](./Roadmap.html) 
 
 # Bienvenido al buscador de recetas
 
@@ -26,8 +26,8 @@ En el proyecto nos vamos a basar en una arquitectura basada en microservicios. L
 
 - Configuración: Microservicio para la gestion y configuración de los difetentes microservicios de forma remota.
 
-A continuación podemos ver el diagrama de la arquitectura:
+<!-- A continuación podemos ver el diagrama de la arquitectura:
 
 ![Diagrama de la arquitectura](img/diagrama_RC.png)
-
-Toda la comunicación entre los microservicios y la APi GateWay se realizarán mediante una API Rest
+ -->
+Toda la comunicación entre los microservicios y la APi GateWay se realizarán mediante una API Rest.
