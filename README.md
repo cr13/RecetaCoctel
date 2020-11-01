@@ -9,7 +9,7 @@ Proyecto para la asignatura de Cloud Computing I
 
 ## Arquitectura
 
-Para la resolución del problema descrito anteriormente, se va optar por utilizar una arquitectura de microservicios, el motivo de su elección es porque creo que es la aquitectura que mejor se adapta a mi proyecto y debido al poco tiempo que se dispone para el desarrollo del mismo, he optado por esta solución que ya es conocida de IV.
+Para la resolución del problema descrito anteriormente, se va optar por utilizar una arquitectura de microservicios, el motivo de su elección es porque creo que es la aquitectura que mejor se adapta a mi proyecto y debido al poco tiempo que se dispone para el desarrollo del mismo, he optado por esta solución que la utilice para el desarrollo de mi TFG.
 
 Para una información mas detallada de los micro servicios que se van a desarrollar se pueden consultar en el siguiente [enlace.](https://cr13.github.io/RecetaCoctel/)
 
@@ -32,5 +32,5 @@ La planificación provisional hasta el momento se pude ver [aquí.](https://cr13
 
 ## Historias de usuario
 
-La historias de usuario definidas hasta el momento se pude ver [aquí.](https://cr13.github.io/RecetaCoctel/hu.html)
+Las historias de usuario definidas hasta el momento se pude ver [aquí.](https://cr13.github.io/RecetaCoctel/hu.html)
 
