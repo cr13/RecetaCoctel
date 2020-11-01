@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Bienvenido al buscador de recetas
+#### [Inicio](./) | [Roadmap](./Roadmap.html) | [Tools](./herramientas.html)
 
-[Roadmap](./docs/Roadmap.html).
+# Bienvenido al buscador de recetas
 
 ## Descripción
 

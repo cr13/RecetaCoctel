@@ -4,11 +4,11 @@ title: Roadmap
 nav_order: 5
 ---
 
-[Inicio](./)
+#### [Inicio](./) | [Roadmap](./Roadmap.html) | [Tools](./herramientas.html)
 
 
 # Planificación del proyecto
-{: .no_toc }
+<!-- {: .no_toc }
 
 <details open markdown="block">
   <summary>
@@ -17,10 +17,10 @@ nav_order: 5
   {: .text-delta }
 1. TOC
 {:toc}
-</details>
+</details> -->
 
 
-La planificación del proyecto definida para este poryecto va estar compuesta por 5 fases (aunque conforme se vaya desarrollando el proyecto podrian salir fases nuevas), las cuales se describen a continuación:
+La planificación definida para este poryecto va estar compuesta por 5 fases (aunque conforme se vaya desarrollando el proyecto podrian salir fases nuevas), las cuales se describen a continuación:
 
 ## Fase cero
 
