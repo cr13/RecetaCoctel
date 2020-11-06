@@ -5,7 +5,6 @@ title: Historias de usuario
 
 ##### [Inicio](./) | [Roadmap](./Roadmap.html) | [HU](./hu.html)
 
-
 # Historias de usuario
 
 1. [HU1 - Consulta de Receta user stories](https://github.com/cr13/RecetaCoctel/issues/5)
