@@ -1,7 +1,7 @@
 
 // Definición de la clase Ingredientes:
 
-exports.Ingredientes = function (nombre, descripcion, tipo, receta) {
+exports.Ingrediente = function (nombre, descripcion, tipo, receta) {
 	this.nombre = nombre;
 	this.descripcion = descripcion;
 	this.tipo = tipo;
