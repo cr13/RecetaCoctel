@@ -14,8 +14,8 @@ Este proyecto se va a realizar en NodeJS, utilizando el framework node express. 
 
 Hasta el momento se han desarrollado dos clases 
 
-- [Recetas](https://github.com/cr13/RecetaCoctel/blob/main/src/Recetas.js)
-- [Ingredientes](https://github.com/cr13/RecetaCoctel/blob/main/src/Ingredientes.js)
+- [Receta](https://github.com/cr13/RecetaCoctel/blob/main/src/Recetas.js)
+- [Ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/Ingredientes.js)
 
 ![Verificación de las clases](https://github.com/cr13/RecetaCoctel/blob/main/doc/img/h1/verificacionclases.png)
 
