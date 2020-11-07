@@ -32,7 +32,7 @@ En esta primera fase se va a desarrollar un microservicio el cual va tener la fu
 
 ## Segunda fase
 
-En esta segunda fase se desarrollara un microservicio que se encague de realizar las comunicaciónde de edicción en función de la acción dada por el usuario.
+En esta segunda fase se desarrollara un microservicio que se encague de realizar las comunicación de edicción en función de la acción deseada por el usuario.
 
 **Historias de Usuario**
 
