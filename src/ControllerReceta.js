@@ -10,6 +10,10 @@ class ControllerReceta {
     getRecetas() {
         return this.recetas;
     }
+
+    addReceta(titulo, instrucciones, ingredientes) {
+        let receta_uno = new receta.Receta(titulo, instrucciones, ingredientes);
+    }
    
 }
 
