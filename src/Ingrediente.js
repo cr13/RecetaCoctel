@@ -16,3 +16,4 @@ function assign_receta(receta) {
 	this.recetas.push(receta);
 }
 
+module.exports = Ingrediente;
