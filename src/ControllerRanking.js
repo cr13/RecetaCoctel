@@ -18,5 +18,4 @@ class ControllerRanking {
 
 }
 
-
 module.exports = ControllerRanking;
