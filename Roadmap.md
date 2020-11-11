@@ -24,21 +24,21 @@ La planificación definida para este poryecto va estar compuesta por las siguien
 
 ## Primera fase
 
-En esta primera fase se va a desarrollar un microservicio el cual va tener la función de localizar una receta y devolvera los resultados encontrados.
-
-**Historias de Usuario**
-
-* [HU1 - Obtener Receta](https://github.com/cr13/RecetaCoctel/issues/5)
-
-## Segunda fase
-
-En esta segunda fase se desarrollara un microservicio que se encague de realizar las comunicación de edicción en función de la acción deseada por el usuario.
+En esta primera fase se desarrollara un microservicio que se encague de realizar las comunicación de edicción en función de la acción deseada por el usuario.
 
 **Historias de Usuario**
 
 * [HU2 - Insertar recetas](https://github.com/cr13/RecetaCoctel/issues/6)
 * [HU3 - Modificación de recetas](https://github.com/cr13/RecetaCoctel/issues/7)
 * [HU4 - Eliminar Recetas](https://github.com/cr13/RecetaCoctel/issues/8)
+
+## Segunda fase
+
+En esta segunda fase se va a desarrollar un microservicio el cual va tener la función de localizar una receta y devolvera los resultados encontrados.
+
+**Historias de Usuario**
+
+* [HU1 - Obtener Receta](https://github.com/cr13/RecetaCoctel/issues/5)
 
 ## Tercera fase
 
