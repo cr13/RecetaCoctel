@@ -11,14 +11,14 @@ class ControllerReceta {
         return this.recetas;
     }
 
-    addReceta(titulo, instrucciones, ingredientes) {
-        let receta_uno = new receta.Receta(titulo, instrucciones, ingredientes);
+    addReceta(receta) {
+        this.recetas.push(receta);
     }
 
     
     delReceta(receta) {
-        let pos = this.historicalEventsList.indexOf(historicalEvent);
-        this.historicalEventsList.splice(pos, 1);
+        let pos_receta = this.recetas.indexOf(receta);
+        this.recetas.splice(pos, 1);
     }
    
 }
