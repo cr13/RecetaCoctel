@@ -58,4 +58,13 @@ Esta fase podrá adelantarse y desarrollarse acontinuación de la primera, en es
 * [HU7 - Mostrar recetas más recientes](https://github.com/cr13/RecetaCoctel/issues/11)
 
 
+## Quinta fase
+
+En esta fase de eligiran la biblioteca de aserciones, el sistema de pruebas y el gestor de tareas. Incluyendo su puesta en marcha.
+
+* [Desarrollo de test](https://github.com/cr13/RecetaCoctel/issues/15)
+
+
+
+
 [UP](./Roadmap.html)
