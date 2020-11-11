@@ -24,10 +24,6 @@ class ControllerReceta {
         let pos_receta = this.recetas.indexOf(receta);
         this.recetas.splice(pos, 1);
     }
-
-    addValoracionReceta(receta, val) {
-
-    }
     
     getRecetaByTitle(recetas, title) {
         var result = []
