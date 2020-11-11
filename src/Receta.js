@@ -9,13 +9,11 @@ class Receta {
 		this.instrucciones = instrucciones;
 		this.ingredientes = ingredientes;
 
-		this.get_dict_receta = get_dict_receta;
-
 	};
 
 	// Función que devuelve una receta como diccionario
 	get_dict_receta() {
-		return { "titulo": titulo, "instrucciones": instrucciones, "ingredientes":ingredientes};
+		return { "titulo": this.titulo, "instrucciones": this.instrucciones, "ingredientes": this.ingredientes };
 	}
 
 }
