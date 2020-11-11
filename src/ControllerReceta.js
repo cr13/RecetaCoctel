@@ -27,7 +27,12 @@ class ControllerReceta {
 
     addValoracionReceta(receta, val) {
 
-    }   
+    }
+    
+    getRecetaByTitle(recetas, title) {
+
+    }
+
 }
 
 module.exports = ControllerReceta;
