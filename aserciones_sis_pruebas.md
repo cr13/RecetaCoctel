@@ -1,3 +1,11 @@
+---
+layout: default
+title: Herramientas_Test
+---
+
+##### [Inicio](./) | [Roadmap](./Roadmap.html) | [HU](./hu.html) | [Tools Test](./aserciones_sis_pruebas.html)
+
+
 ## Elección y justificación de la biblioteca de aserciones
 
 Para la elección de la biblioteca de aserciones se han tenido en cuenta las vista en el [temario](http://jj.github.io/CC/documentos/temas/Desarrollo_basado_en_pruebas): [Chai](https://www.chaijs.com/), [Should.js](https://github.com/tj/should.js), [Must.js](https://github.com/moll/js-must) y assert que es la librería que forma parte de la estándar de Javascript.
