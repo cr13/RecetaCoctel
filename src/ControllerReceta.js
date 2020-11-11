@@ -16,7 +16,8 @@ class ControllerReceta {
     }
 
     changeReceta(receta, receta_new) {
-        
+        this.delReceta(receta)
+        this.addReceta(receta_new);
     }
 
     delReceta(receta) {
