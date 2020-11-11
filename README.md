@@ -21,9 +21,9 @@ Hasta el momento se han desarrollado dos clases
 
 ## Planificación del proyecto (ROADMAP)
 
-La planificación provisional hasta el momento se pude ver [aquí.](https://cr13.github.io/RecetaCoctel/Roadmap.html)
+La planificación provisional hasta el momento se puede ver [aquí.](https://cr13.github.io/RecetaCoctel/Roadmap.html)
 
 ## Historias de usuario
 
-Las historias de usuario definidas hasta el momento se pude ver [aquí.](https://cr13.github.io/RecetaCoctel/hu.html)
+Las historias de usuario definidas hasta el momento se puede ver [aquí.](https://cr13.github.io/RecetaCoctel/hu.html)
 
