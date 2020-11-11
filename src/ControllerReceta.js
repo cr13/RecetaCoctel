@@ -19,6 +19,10 @@ class ControllerReceta {
         
     }
 
+    delReceta(receta) {
+        let pos_receta = this.recetas.indexOf(receta);
+        this.recetas.splice(pos, 1);
+    }
    
 }
 
