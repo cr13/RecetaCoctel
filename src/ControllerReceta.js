@@ -14,6 +14,12 @@ class ControllerReceta {
     addReceta(titulo, instrucciones, ingredientes) {
         let receta_uno = new receta.Receta(titulo, instrucciones, ingredientes);
     }
+
+    
+    delReceta(receta) {
+        let pos = this.historicalEventsList.indexOf(historicalEvent);
+        this.historicalEventsList.splice(pos, 1);
+    }
    
 }
 
