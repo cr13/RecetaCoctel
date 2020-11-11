@@ -6,6 +6,11 @@ class ControllerRanking {
         this.list_recetas = {};
     }
 
+    //Devolvera las 10 recetas mejor valoradas
+    getTop10Recetas() {
+        return true;
+    }
+
 }
 
 
