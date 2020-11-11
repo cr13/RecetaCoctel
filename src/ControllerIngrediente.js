@@ -3,12 +3,12 @@ var ingrediente = require("./Ingrediente");
 
 class ControllerIngrediente {
     constructor() {
-        this.Ingredientes = {};
+        this.ingredientes = {};
     }
 
     //Función para añadir un ingrediente
-    addIngrediente(nombre, descripcion, tipo) {
-      
+    addIngrediente(ing) {
+        this.ingredientes.push(ing);
     }
 
 }
