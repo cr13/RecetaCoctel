@@ -15,3 +15,7 @@ exports.Receta = function (titulo, instrucciones, ingredientes) {
 function get_dict_receta() {
 	return { "titulo": titulo, "instrucciones": instrucciones, "ingredientes":ingredientes};
 }
+
+
+
+module.exports = Receta;
