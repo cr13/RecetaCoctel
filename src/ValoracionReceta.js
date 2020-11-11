@@ -8,8 +8,6 @@ class ValoracionReceta {
         this.receta = receta;
         this.valoracion = valoracion;   
 
-        this.set_valReceta = set_valReceta;
-
     };
 }
 
