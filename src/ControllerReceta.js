@@ -15,11 +15,10 @@ class ControllerReceta {
         this.recetas.push(receta);
     }
 
-    
-    delReceta(receta) {
-        let pos_receta = this.recetas.indexOf(receta);
-        this.recetas.splice(pos, 1);
+    changeReceta(receta, receta_new) {
+        
     }
+
    
 }
 
