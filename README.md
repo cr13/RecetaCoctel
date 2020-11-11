@@ -23,9 +23,9 @@ Hasta el momento se han desarrollado las siguientes clases
 - [ControllerReceta](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerReceta.js)
 - [Ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/Ingrediente.js)
 - [ControllerIngrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerIngrediente.js)
-- [ValoracioneReceta](https://github.com/cr13/RecetaCoctel/blob/main/src/ValoracionReceta.js)
-- [ControllerValoracion](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerRanking.js)
-- [ControllerRanking]()
+- [ValoracionReceta](https://github.com/cr13/RecetaCoctel/blob/main/src/ValoracionReceta.js)
+- [ControllerValoracion](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerValoracion.js)
+- [ControllerRanking](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerRanking.js)
 
 ![Verificación de las clases](https://github.com/cr13/RecetaCoctel/blob/main/doc/img/h1/verificacionclases.png)
 
