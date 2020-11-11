@@ -20,6 +20,10 @@ Para la resolución del problema descrito anteriormente, se va optar por utiliza
 - Facilita el mantenimiento de cada uno de ellos por separado.
 - Reutilización de funcionalidades típicas que ya hayan sido desarrolladas.
 
+## Lenguaje
+
+Este proyecto se va a realizar en NodeJS, utilizando el framework node express. El motivo de su elección se ha dado tras valorar otras opciones como escala, go o python, visto que los demás compañeros han optado por estas opciones según comentaron en clase, he decido hacer algo diferente y por eso la elección de NodeJS.
+
 <!-- En el proyecto nos vamos a basar en una arquitectura basada en microservicios. Los cuales se han desglosado de la siguiente manera:
 
 
