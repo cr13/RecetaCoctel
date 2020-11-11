@@ -13,7 +13,12 @@ Algunas de sus funciones se van a centrar en poder buscar receta de cocteles de 
 
 ## Arquitectura
 
-Para la resolución del problema descrito anteriormente, se va optar por utilizar una arquitectura de microservicios, el motivo de su elección ha sido por los beneficios que nos aporta dicha arquitectura, dado que al dividir el proyecto en varios microservicios en el caso de fallo de alguno de ellos no afectaría al resto. También aporta escalabilidad, ya que se podrían desarrollar e incorporar más microservicios sin que afecte a los existentes, además de facilitar el mantenimiento de cada uno de ellos por separado. 
+Para la resolución del problema descrito anteriormente, se va optar por utilizar una arquitectura de microservicios, el motivo de su elección ha sido porque *se necestia que la aplicación sea accesible para un gran número de usuarios, por lo tanto esta arquitectura es la mejor para resolver grandes volumenes de peticiones*, además de los beneficios que nos aporta dicha arquitectura, tales como:
+- Modularidad: Permite dividir el proyecto en varios microservicios, en el caso de fallo de alguno de ellos no afectaría al resto.
+- Versatilidad: podemos usar diferentes lenguajes de programación
+- Escalabilidad, ya que se podrían desarrollar e incorporar más microservicios sin que afecte a los existentes
+- Facilita el mantenimiento de cada uno de ellos por separado.
+- Reutilización de funcionalidades típicas que ya hayan sido desarrolladas.
 
 <!-- En el proyecto nos vamos a basar en una arquitectura basada en microservicios. Los cuales se han desglosado de la siguiente manera:
 
