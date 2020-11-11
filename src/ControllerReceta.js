@@ -4,11 +4,11 @@ var receta = require("./Receta");
 
 class ControllerReceta {
     constructor() {
-        this.Recetas = {}; 
+        this.recetas = {}; 
     }
 
-    addReceta(titulo, instrucciones, ingredientes) {
-        let receta_uno = new receta.Receta(titulo, instrucciones, ingredientes);
+    getRecetas() {
+        return this.recetas;
     }
    
 }
