@@ -6,8 +6,9 @@ class ControllerIngrediente {
         this.Ingredientes = {};
     }
 
+    //Función para añadir un ingrediente
     addIngrediente(nombre, descripcion, tipo) {
-        let ingrediente = new ingrediente.Ingrediente(nombre, descripcion, tipo);
+      
     }
 
 }
