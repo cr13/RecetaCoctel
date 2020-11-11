@@ -30,7 +30,14 @@ class ControllerReceta {
     }
     
     getRecetaByTitle(recetas, title) {
-
+        var result = []
+        for (let index = 0; index < recetas.length; index++) {
+            var til = recetas[index].titulo
+            if (til.toLowerCase().indexOf(title.toLowerCase()) > -1) {
+                result.push(recetas[index]);
+            }
+        }
+        return result;
     }
 
 }
