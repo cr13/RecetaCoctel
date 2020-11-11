@@ -24,7 +24,10 @@ class ControllerReceta {
         let pos_receta = this.recetas.indexOf(receta);
         this.recetas.splice(pos, 1);
     }
-   
+
+    addValoracionReceta(receta, val) {
+
+    }   
 }
 
 module.exports = ControllerReceta;
