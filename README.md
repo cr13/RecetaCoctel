@@ -17,7 +17,7 @@ Este proyecto se va a realizar en NodeJS, utilizando el framework node express. 
 
 ## Clases desarrolladas
 
-Hasta el momento se han desarrollado las siguientes clases 
+**Hasta el momento se han desarrollado las siguientes clases**
 
 - [**Receta**](https://github.com/cr13/RecetaCoctel/blob/main/src/Receta.js)
 - [**ControllerReceta**](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerReceta.js)
