@@ -1,3 +1,9 @@
+lenguaje: node_js
+
 entidad: 
   - src/Receta.js
   - src/Ingrediente.js
+  - src/ControllerReceta.js
+  
+test:
+  - src/test/receta.test.js 
