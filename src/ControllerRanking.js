@@ -11,6 +11,11 @@ class ControllerRanking {
         return true;
     }
 
+    //Devulve las últimas recetas insertadas
+    getLatestRecetas() {
+        return true;
+    }
+
 }
 
 
