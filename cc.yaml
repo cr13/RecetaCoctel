@@ -4,6 +4,10 @@ entidad:
   - src/Receta.js
   - src/Ingrediente.js
   - src/ControllerReceta.js
+  - src/ControllerIngrediente.js
+  - src/ValoracionReceta.js
+  - src/ControllerValoracion.js
+  - src/ControllerRanking.js
   
 test:
   - src/test/receta.test.js 
