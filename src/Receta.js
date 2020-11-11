@@ -7,7 +7,7 @@ exports.Receta = function (titulo, instrucciones, ingredientes) {
 	this.instrucciones = instrucciones;
 	this.ingredientes = ingredientes;
 
-	this.get_receta = get_receta;
+	this.get_dict_receta = get_dict_receta;
 
 };
 
