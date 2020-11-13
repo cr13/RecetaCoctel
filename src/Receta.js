@@ -1,5 +1,4 @@
 
-
 // Definición de la clase Receta:
 
 class Receta {
@@ -11,10 +10,6 @@ class Receta {
 
 	};
 
-	// Función que devuelve una receta como diccionario
-	get_dict_receta() {
-		return { "titulo": this.titulo, "instrucciones": this.instrucciones, "ingredientes": this.ingredientes };
-	}
 
 }
 
