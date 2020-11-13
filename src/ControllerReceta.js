@@ -1,6 +1,4 @@
 var receta = require("./Receta");
-// var ingrediente = require("./Ingrediente");
-
 
 class ControllerReceta {
     constructor() {
