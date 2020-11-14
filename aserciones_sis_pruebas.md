@@ -27,3 +27,21 @@ Finalmente me he decantado por **Jest** por varios motivos:
 
 En toda las buenas prácticas se recomienda usar Chai y Mocha cuando tu proyecto es grande con necesidades de flexibilidad y personalización. Jest se recomienda para proyectos más livianos ya que no necesitas configuración adicional por adelantado. 
 Por lo tanto, como no lo he utilizado nunca y estamos para aprender cosas nuevas me he decidido por usar Jest.
+
+## Gestor de tareas
+
+Siguiendo el temario existen dos gestores de tareas **gulp** y **grunt**, los cuales son muy similares, la unica diferencia que he encontrado es que gulp puede ser considerado más rápido en su ejecución debido a que lleva a cabo los procesos en la memoria y escribe directamente en los ficheros. En cambio grunt está orientada a los ficheros, es decir, los crea en local y de forma temporal como resultado de las tareas ejecutada. 
+Por esto lo normal es que elija gulp, pero viendo la forma de crear las tareas me quedo con grunt me resulta mas fácil.
+
+Referencias consultadas:
+[ionos.es gulp vs grunt](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/gulp-vs-grunt-que-diferencia-a-estos-task-runners/)
+
+[blog grunt vs gulp + ejemplos](https://blog.koalite.com/2015/06/grunt-o-gulp-que-uso/)
+
+[Tutorial básico gulp](https://frontendlabs.io/1669--gulp-js-en-espanol-tutorial-basico-primeros-pasos-y-ejemplos)
+
+[Video tutorial gulp](https://es.coursera.org/lecture/disenando-paginas-bootstrap4/automatizadores-de-tareas-gulp-yg01h)
+
+[Turorial grunt](https://gruntjs.com/getting-started)
+
+[Video tutorial grunt](https://es.coursera.org/lecture/disenando-paginas-bootstrap4/automatizadores-de-tareas-grunt-IPaB7)
