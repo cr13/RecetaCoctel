@@ -34,14 +34,14 @@ Siguiendo el temario existen dos gestores de tareas **gulp** y **grunt**, los cu
 Por esto lo normal es que elija gulp, pero viendo la forma de crear las tareas me quedo con grunt me resulta mas fácil.
 
 Referencias consultadas:
-[ionos.es gulp vs grunt](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/gulp-vs-grunt-que-diferencia-a-estos-task-runners/)
+- [ionos.es gulp vs grunt](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/gulp-vs-grunt-que-diferencia-a-estos-task-runners/)
 
-[blog grunt vs gulp + ejemplos](https://blog.koalite.com/2015/06/grunt-o-gulp-que-uso/)
+- [blog grunt vs gulp + ejemplos](https://blog.koalite.com/2015/06/grunt-o-gulp-que-uso/)
 
-[Tutorial básico gulp](https://frontendlabs.io/1669--gulp-js-en-espanol-tutorial-basico-primeros-pasos-y-ejemplos)
+- [Tutorial básico gulp](https://frontendlabs.io/1669--gulp-js-en-espanol-tutorial-basico-primeros-pasos-y-ejemplos)
 
-[Video tutorial gulp](https://es.coursera.org/lecture/disenando-paginas-bootstrap4/automatizadores-de-tareas-gulp-yg01h)
+- [Video tutorial gulp](https://es.coursera.org/lecture/disenando-paginas-bootstrap4/automatizadores-de-tareas-gulp-yg01h)
 
-[Turorial grunt](https://gruntjs.com/getting-started)
+- [Turorial grunt](https://gruntjs.com/getting-started)
 
-[Video tutorial grunt](https://es.coursera.org/lecture/disenando-paginas-bootstrap4/automatizadores-de-tareas-grunt-IPaB7)
+- [Video tutorial grunt](https://es.coursera.org/lecture/disenando-paginas-bootstrap4/automatizadores-de-tareas-grunt-IPaB7)
