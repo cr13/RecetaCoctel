@@ -37,3 +37,22 @@ La planificación provisional hasta el momento se puede ver [aquí.](https://cr1
 
 Las historias de usuario definidas hasta el momento se puede ver [aquí.](https://cr13.github.io/RecetaCoctel/hu.html)
 
+## Elección y justificación de biblioteca de aserciones y sistema de pruebas.
+
+Se ha seleccionado **jest** para saber más [aquí.](https://cr13.github.io/RecetaCoctel/aserciones_sis_pruebas.html)
+
+## Gestor de tareas 
+
+El gestor de tareas elegido ha sido **grunt**, ver justificación [aquí](https://cr13.github.io/RecetaCoctel/aserciones_sis_pruebas.html#item3)
+
+## Instrucciones 
+
+```bash
+
+    npm i -D grunt-cli # Instala gestor grunt
+
+    grunt install   # Instala las dependencias necesarias
+
+    grunt           #Tarea por defecto, en mi caso ejecuta los test.
+
+```
