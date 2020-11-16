@@ -5,6 +5,7 @@ title: Herramientas_Test
 
 ##### [Inicio](./) | [Roadmap](./Roadmap.html) | [HU](./hu.html) | [Tools Test](./aserciones_sis_pruebas.html)
 
+<a name="item1"></a>
 
 ## Elección y justificación de la biblioteca de aserciones
 
@@ -13,6 +14,8 @@ Para la elección de la biblioteca de aserciones se han tenido en cuenta las vis
 En una primera instancia había elegido **Chai**, el principal motivo es porque es la más usada junto al marco de pruebas **mocha**, su funcionamiento es un estilo al de la librería assert de Javascript. Además de ser una biblioteca de aserciones BDD / TDD y se puede combinar con cualquier marco de prueba de JavaScript. 
 
 Pero finalmente en el siguiente punto al investigar los marcos de prueba comprobe que **jest** ya trae incorporado una biblioteca de aserciones.
+
+<a name="item2"></a>
 
 ## Buscar un sistema de prueba del código, una librería o marco
 
@@ -27,6 +30,9 @@ Finalmente me he decantado por **Jest** por varios motivos:
 
 En toda las buenas prácticas se recomienda usar Chai y Mocha cuando tu proyecto es grande con necesidades de flexibilidad y personalización. Jest se recomienda para proyectos más livianos ya que no necesitas configuración adicional por adelantado. 
 Por lo tanto, como no lo he utilizado nunca y estamos para aprender cosas nuevas me he decidido por usar Jest.
+
+<a name="item3"></a>
+
 
 ## Gestor de tareas
 
