@@ -11,3 +11,4 @@ entidad:
   
 test:
   - src/test/receta.test.js 
+  - src/test/ingredientes.test.js
