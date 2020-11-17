@@ -36,7 +36,7 @@ Por lo tanto, como no lo he utilizado nunca y estamos para aprender cosas nuevas
 
 ## Gestor de tareas
 
-Siguiendo el temario existen dos gestores de tareas **gulp** y **grunt**, los cuales son muy similares, la unica diferencia que he encontrado es que gulp puede ser considerado más rápido en su ejecución debido a que lleva a cabo los procesos en la memoria y escribe directamente en los ficheros. En cambio grunt está orientada a los ficheros, es decir, los crea en local y de forma temporal como resultado de las tareas ejecutada. 
+Siguiendo el temario existen dos gestores de tareas **gulp** y **grunt**, los cuales son muy similares, la única diferencia que he encontrado es que gulp puede ser considerado más rápido en su ejecución debido a que lleva a cabo los procesos en la memoria y escribe directamente en los ficheros. En cambio grunt está orientada a los ficheros, es decir, los crea en local y de forma temporal como resultado de las tareas ejecutada. 
 Por esto lo normal es que elija gulp, pero viendo la forma de crear las tareas me quedo con grunt me resulta mas fácil.
 
 Referencias consultadas:
