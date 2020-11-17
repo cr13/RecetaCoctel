@@ -19,12 +19,12 @@ title: Roadmap
 </details> -->
 
 
-La planificación definida para este poryecto va estar compuesta por las siguientes fases (aunque conforme se vaya desarrollando el proyecto podrian salir fases nuevas):
+La planificación definida para este proyecto va estar compuesta por las siguientes fases (aunque conforme se vaya desarrollando el proyecto podrían salir fases nuevas):
 
 
 ## Primera fase
 
-En esta primera fase se desarrollara un microservicio que se encague de realizar las comunicación de edicción en función de la acción deseada por el usuario.
+En esta primera fase se desarrollara un microservicio que se encargue de realizar las comunicación de edición en función de la acción deseada por el usuario.
 
 **Historias de Usuario**
 
@@ -34,7 +34,7 @@ En esta primera fase se desarrollara un microservicio que se encague de realizar
 
 ## Segunda fase
 
-En esta segunda fase se va a desarrollar un microservicio el cual va tener la función de localizar una receta y devolvera los resultados encontrados.
+En esta segunda fase se va a desarrollar un microservicio el cual va tener la función de localizar una receta y devolverá los resultados encontrados.
 
 **Historias de Usuario**
 
@@ -50,7 +50,7 @@ En la tercera fase, se desarrollara un microservicio que se encargara de que los
 
 ## Cuarta fase
 
-Esta fase podrá adelantarse y desarrollarse acontinuación de la primera, en esta fase se desarrollara un microservicio que listará las recetas según la necesidad requerida.
+Esta fase podrá adelantarse y desarrollarse a continuación de la primera, en esta fase se desarrollara un microservicio que listará las recetas según la necesidad requerida.
 
 **Historia de Usuario**
 
