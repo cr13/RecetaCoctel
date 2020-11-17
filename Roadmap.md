@@ -22,49 +22,40 @@ title: Roadmap
 La planificación definida para este proyecto va estar compuesta por las siguientes fases (aunque conforme se vaya desarrollando el proyecto podrían salir fases nuevas):
 
 
-## Primera fase
+## Hito 1: Planificación del proyecto
 
-En esta primera fase se desarrollara un microservicio que se encargue de realizar las comunicación de edición en función de la acción deseada por el usuario.
-
-**Historias de Usuario**
-
-* [HU2 - Insertar recetas](https://github.com/cr13/RecetaCoctel/issues/6)
-* [HU3 - Modificación de recetas](https://github.com/cr13/RecetaCoctel/issues/7)
-* [HU4 - Eliminar Recetas](https://github.com/cr13/RecetaCoctel/issues/8)
-
-## Segunda fase
-
-En esta segunda fase se va a desarrollar un microservicio el cual va tener la función de localizar una receta y devolverá los resultados encontrados.
+El objetivo de este hito será definir las entidades principales de una receta y de un ingrediente, ya que una receta estará compuesta de uno o más ingredientes. También se definirán los métodos para gestionar la receta e ingrediente. Además se definirá un método para obtener una receta por titulo/nombre y otro para que los usuarios puedan dar una valoración a la receta.
 
 **Historias de Usuario**
 
-* [HU1 - Obtener Receta](https://github.com/cr13/RecetaCoctel/issues/5)
+* [HU - Definir las entidades de un Ingrediente](https://github.com/cr13/RecetaCoctel/issues/21)
+* [HU - Definir las entidades para una receta](https://github.com/cr13/RecetaCoctel/issues/22)
+* [HU - Insertar un ingrediente](https://github.com/cr13/RecetaCoctel/issues/24)
+* [HU - Insertar una receta](https://github.com/cr13/RecetaCoctel/issues/6)
+* [HU - Modificación de receta](https://github.com/cr13/RecetaCoctel/issues/7)
+* [HU - Eliminar Receta](https://github.com/cr13/RecetaCoctel/issues/8)
+* [HU - Obtener Receta](https://github.com/cr13/RecetaCoctel/issues/5)
+* [HU - Valorar recetas](https://github.com/cr13/RecetaCoctel/issues/9)
 
-## Tercera fase
+## Ranking recetas
 
-En la tercera fase, se desarrollara un microservicio que se encargara de que los usuarios puedan introducir una valoración de la receta.
+En este hito, el objetivo sera mostrar las 10 recetas mejor valoradas y también se podrán mostrar las recetas más recientes registradas en el sistema. 
 
 **Historia de Usuario**
 
-* [HU5 - Valorar recetas](https://github.com/cr13/RecetaCoctel/issues/9)
-
-## Cuarta fase
-
-Esta fase podrá adelantarse y desarrollarse a continuación de la primera, en esta fase se desarrollara un microservicio que listará las recetas según la necesidad requerida.
-
-**Historia de Usuario**
-
-* [HU6 - Mostar un top 10 de las mejores recetas](https://github.com/cr13/RecetaCoctel/issues/10)
-* [HU7 - Mostrar recetas más recientes](https://github.com/cr13/RecetaCoctel/issues/11)
+* [HU - Mostar un top 10 de las mejores recetas](https://github.com/cr13/RecetaCoctel/issues/10)
+* [HU - Mostrar recetas más recientes](https://github.com/cr13/RecetaCoctel/issues/11)
 
 
-## Quinta fase
+## Hito 2: Test
 
-En esta fase se elegirán la biblioteca de aserciones, el sistema de pruebas y el gestor de tareas. Incluyendo su puesta en marcha.
+El objetivo de este hito será la realización de test para verificar el funcionamiento correcto de todas las funcionalidades creadas en los hitos anteriores.
 
 * [Desarrollo de test](https://github.com/cr13/RecetaCoctel/issues/15)
 
+## Hito 3: Realizar los test en un contenedor
 
+El objetivo de este hito será la realización de los test del hito anterior en un contenedor utilizando docker.
 
 
 [UP](./Roadmap.html)
