@@ -13,7 +13,7 @@ Para la elección de la biblioteca de aserciones se han tenido en cuenta las vis
 
 En una primera instancia había elegido **Chai**, el principal motivo es porque es la más usada junto al marco de pruebas **mocha**, su funcionamiento es un estilo al de la librería assert de Javascript. Además de ser una biblioteca de aserciones BDD / TDD y se puede combinar con cualquier marco de prueba de JavaScript. 
 
-Pero finalmente en el siguiente punto al investigar los marcos de prueba comprobe que **jest** ya trae incorporado una biblioteca de aserciones.
+Pero finalmente en el siguiente punto al investigar los marcos de prueba comprobé que **jest** ya trae incorporado una biblioteca de aserciones.
 
 <a name="item2"></a>
 
