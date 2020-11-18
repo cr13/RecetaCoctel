@@ -14,19 +14,19 @@ class ControllerReceta {
     }
 
     changeReceta(receta, receta_new) {
-        this.delReceta(receta)
+        this.delReceta(receta);
         this.addReceta(receta_new);
     }
 
     delReceta(receta) {
         let pos_receta = this.recetas.indexOf(receta);
-        this.recetas.splice(pos, 1);
+        this.recetas.splice(pos_receta, 1);
     }
     
     getRecetaByTitle(recetas, title) {
-        var result = []
+        let result = [];
         for (let index = 0; index < recetas.length; index++) {
-            var til = recetas[index].titulo
+            let til = recetas[index].titulo;
             if (til.toLowerCase().indexOf(title.toLowerCase()) > -1) {
                 result.push(recetas[index]);
             }
