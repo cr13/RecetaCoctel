@@ -8,7 +8,7 @@ class Ingrediente {
 		this.tipo = tipo;
 		this.recetas = recetas;
 
-	};
+	}
 
 	// Asignar ingrediente a receta
 	assign_receta(receta) {
