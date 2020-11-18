@@ -16,6 +16,9 @@ module.exports = function (grunt) {
             npm_install: {
                 command: 'npm install',
             },
+            npm_ci: {
+                command: 'npm ci',
+            },
             npm_test_jest: {
                 command: 'npm test',
             }
@@ -32,7 +35,9 @@ module.exports = function (grunt) {
 
     //Instalación de dependencias o actualización de las existentes
     grunt.registerTask('install', ['shell:npm_install']);
-
+    //Tarea para ejecución en integración continua o para instalar 
+    //dependencias sin modificar el package-lock.json
+    grunt.registerTask("ci", ["shell:npm_ci"]);
     //Ejecuta tests
     grunt.registerTask('default', ['shell:npm_test_jest', 'jshint']);
 
