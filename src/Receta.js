@@ -11,7 +11,7 @@ class Receta {
 		this.dificultad = dificultad;
 		this.ingredientes = ingredientes;
 
-	};
+	}
 
 	// Función que devuelve una receta como diccionario
 	get_dict_receta() {
