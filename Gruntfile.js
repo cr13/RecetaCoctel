@@ -5,6 +5,9 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON("package.json"),
+        jshint: {
+            all: ["Gruntfile.js", "src/**/*.js", "src/test/**/*.js"],          
+        },
 
         shell: {
             npm_install: {
@@ -16,10 +19,18 @@ module.exports = function (grunt) {
         }
     });
 
-    //Tarea de instalación
-    grunt.registerTask("install", ["shell:npm_install"]);
+    //Plugins
 
-    //Tarea para ejecutar tests
-    grunt.registerTask('default', ['shell:npm_test_jest']);
+    // Comprobación de de sintaxis
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+
+    //Tareas
+
+
+    //Instalación de dependencias o actualización de las existentes
+    grunt.registerTask('install', ['shell:npm_install']);
+
+    //Ejecuta tests
+    grunt.registerTask('default', ['shell:npm_test_jest', 'jshint']);
 
 };
