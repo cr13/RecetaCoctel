@@ -8,7 +8,7 @@ class ValoracionReceta {
         this.receta = receta;
         this.valoracion = valoracion;   
 
-    };
+    }
 }
 
 module.exports = ValoracionReceta;
