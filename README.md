@@ -49,10 +49,16 @@ El gestor de tareas elegido ha sido **grunt**, ver justificación [aquí](https:
 
 ```bash
 
-    npm i -D grunt-cli # Instala gestor grunt
+    # Instala gestor grunt.
+    npm i -D grunt-cli
 
-    grunt install   # Instala las dependencias necesarias
+    # Instala las dependencias necesarias.
+    grunt install   
 
-    grunt           #Tarea por defecto, en mi caso ejecuta los test.
+    # Instalación limpia de las dependencias, ideal para integración continua.
+    grunt ci        
+
+    # Ejecuta tarea por defecto, en mi caso ejecuta los test y el plugin para comprobar sintaxis.
+    grunt           
 
 ```
