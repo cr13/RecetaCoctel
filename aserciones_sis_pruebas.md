@@ -39,6 +39,30 @@ Por lo tanto, como no lo he utilizado nunca y estamos para aprender cosas nuevas
 Siguiendo el temario existen dos gestores de tareas **gulp** y **grunt**, los cuales son muy similares, la única diferencia que he encontrado es que gulp puede ser considerado más rápido en su ejecución debido a que lleva a cabo los procesos en la memoria y escribe directamente en los ficheros. En cambio grunt está orientada a los ficheros, es decir, los crea en local y de forma temporal como resultado de las tareas ejecutada. 
 Por esto lo normal es que elija gulp, pero viendo la forma de crear las tareas me quedo con grunt me resulta mas fácil.
 
+Para su uso se ha creado el fichero [Gruntfile.js](https://github.com/cr13/RecetaCoctel/blob/main/Gruntfile.js), en el que se han definido 4 tareas, 2 para instalación, otra para la realización de los test jest y una ultima ha sido añadida para comprobar la sintaxis del código.
+
+Para la ejecución de las diferentes instalaciones y realización de test se ha utilizado [grunt-shell](https://www.npmjs.com/package/grunt-shell) y para la comprobación de sintaxis de las clases desarrolladas se ha utilizado el plugin [grunt-contrib-jshint](https://www.npmjs.com/package/grunt-contrib-jshint).
+
+Además, se han añadido algunas herramientas como [time-grunt](https://www.npmjs.com/package/time-grunt) que muestra unas estadísticas de la ejecución de cada tarea como el tiempo de ejecución. Y la otra añadida ha sido [jit-grunt](https://www.npmjs.com/package/jit-grunt) que sirve para pre-cargar todos los plugins de grunt para agilizar las diferentes tareas (aunque en nuestro caso no tenemos muchos plugins para notar un cambio significativo).
+
+Al ejecutar la tarea de test se utiliza el comando *npm test*, el motivo ha sido porque [grunt-jest](https://www.npmjs.com/package/grunt-jest) está en desuso como se puede comprobar en su documentación oficial.
+
+Por otro lado, se ha añadido un [fichero](https://github.com/cr13/RecetaCoctel/blob/main/.jshintrc) de configuración las opciones para el plugin *jshint*, para indicar la versión de javascript, con el objetivo de evitar los warnings ('const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).)
+
+Ejecución de las tareas:
+
+```bash
+    # Instala las dependencias necesarias indicadas en el package.json.
+    grunt install   
+
+    # Instalación limpia de las dependencias del package.json, ideal para integración continua.
+    grunt ci        
+
+    # Ejecuta tarea por defecto, en mi caso ejecuta los test y el plugin para comprobar sintaxis.
+    grunt     
+```
+
+
 Referencias consultadas:
 - [ionos.es gulp vs grunt](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/gulp-vs-grunt-que-diferencia-a-estos-task-runners/)
 
