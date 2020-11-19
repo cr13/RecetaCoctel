@@ -19,10 +19,10 @@ title: Roadmap
 </details> -->
 
 
-La planificación definida para este proyecto va estar compuesta por las siguientes fases (aunque conforme se vaya desarrollando el proyecto podrían salir fases nuevas):
+La planificación definida para este proyecto va estar compuesta por los siguientes hitos (aunque conforme se vaya desarrollando el proyecto podrían salir nuevos hitos.):
 
 
-## Hito 1: Planificación del proyecto
+## Hito 1: Definición de entidades y sus métodos
 
 El objetivo de este hito será definir las entidades principales de una receta y de un ingrediente, ya que una receta estará compuesta de uno o más ingredientes. También se definirán los métodos para gestionar la receta e ingrediente. Además se definirá un método para obtener una receta por titulo/nombre y otro para que los usuarios puedan dar una valoración a la receta.
 
@@ -37,6 +37,8 @@ El objetivo de este hito será definir las entidades principales de una receta y
 * [HU - Obtener Receta](https://github.com/cr13/RecetaCoctel/issues/5)
 * [HU - Valorar recetas](https://github.com/cr13/RecetaCoctel/issues/9)
 
+El **MPV**  para este hito serán las clases con sus métodos, y sin mas funcionalidad que el de ser sintácticamente correctos.
+
 ## Ranking recetas
 
 En este hito, el objetivo sera mostrar las 10 recetas mejor valoradas y también se podrán mostrar las recetas más recientes registradas en el sistema. 
@@ -46,12 +48,16 @@ En este hito, el objetivo sera mostrar las 10 recetas mejor valoradas y también
 * [HU - Mostar un top 10 de las mejores recetas](https://github.com/cr13/RecetaCoctel/issues/10)
 * [HU - Mostrar recetas más recientes](https://github.com/cr13/RecetaCoctel/issues/11)
 
+El **MPV**  para este hito será la clase con las dos funcionalidades descritas.
 
 ## Hito 2: Test
 
 El objetivo de este hito será la realización de test para verificar el funcionamiento correcto de todas las funcionalidades creadas en los hitos anteriores.
 
 * [Desarrollo de test](https://github.com/cr13/RecetaCoctel/issues/15)
+
+
+El **MPV**  para este hito serán la comprobación de las clases y sus métodos. Deben de pasar una serie de test con éxito.
 
 ## Hito 3: Realizar los test en un contenedor
 
