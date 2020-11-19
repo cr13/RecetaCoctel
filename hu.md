@@ -8,10 +8,14 @@ title: Historias de usuario
 
 # Historias de usuario
 
-1. [HU1 - Obtener Receta](https://github.com/cr13/RecetaCoctel/issues/5)
-2. [HU2 - Insertar recetas](https://github.com/cr13/RecetaCoctel/issues/6)
-3. [HU3 - Modificación de recetas](https://github.com/cr13/RecetaCoctel/issues/7)
-4. [HU4 - Eliminar Recetas](https://github.com/cr13/RecetaCoctel/issues/8)
-5. [HU5 - Valorar recetas](https://github.com/cr13/RecetaCoctel/issues/9)
-6. [HU6 - Mostar un top 10 de las mejores recetas](https://github.com/cr13/RecetaCoctel/issues/10)
-7. [HU7 - Mostrar recetas más recientes](https://github.com/cr13/RecetaCoctel/issues/11)
+1. Rol: Dev [HU - Definir las entidades para una receta](https://github.com/cr13/RecetaCoctel/issues/22)
+2. Rol: Dev [HU - Definir las entidades de un Ingrediente](https://github.com/cr13/RecetaCoctel/issues/21)
+3. Rol: Usu [HU - Obtener Receta](https://github.com/cr13/RecetaCoctel/issues/5)
+4. Rol: Usu [HU - Insertar recetas](https://github.com/cr13/RecetaCoctel/issues/6)
+5. Rol: Usu [HU - Modificación de recetas](https://github.com/cr13/RecetaCoctel/issues/7)
+6. Rol: Usu [HU - Eliminar Recetas](https://github.com/cr13/RecetaCoctel/issues/8)
+7. Rol: Usu [HU - Valorar recetas](https://github.com/cr13/RecetaCoctel/issues/9)
+8. Rol: Usu [HU - Mostrar un top 10 de las mejores recetas](https://github.com/cr13/RecetaCoctel/issues/10)
+9. Rol: Usu [HU - Mostrar recetas más recientes](https://github.com/cr13/RecetaCoctel/issues/11)
+10. Rol: Usu [HU - Insertar un ingrediente](https://github.com/cr13/RecetaCoctel/issues/24) 
+11. Rol: Dev [HU - Generar documentación con GH-Pages](https://github.com/cr13/RecetaCoctel/issues/12)
