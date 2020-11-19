@@ -8,8 +8,8 @@ title: Historias de usuario
 
 # Historias de usuario
 
-1. Rol: Dev [HU - Definir las entidades para una receta](https://github.com/cr13/RecetaCoctel/issues/22)
-2. Rol: Dev [HU - Definir las entidades de un Ingrediente](https://github.com/cr13/RecetaCoctel/issues/21)
+1. Rol: Dev [HU - Definir la entidad receta](https://github.com/cr13/RecetaCoctel/issues/22)
+2. Rol: Dev [HU - Definir la entidad Ingrediente](https://github.com/cr13/RecetaCoctel/issues/21)
 3. Rol: Usu [HU - Obtener Receta](https://github.com/cr13/RecetaCoctel/issues/5)
 4. Rol: Usu [HU - Insertar recetas](https://github.com/cr13/RecetaCoctel/issues/6)
 5. Rol: Usu [HU - Modificación de recetas](https://github.com/cr13/RecetaCoctel/issues/7)
