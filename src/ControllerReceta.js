@@ -2,7 +2,7 @@ var receta = require("./Receta");
 
 class ControllerReceta {
     constructor() {
-        this.recetas = {}; 
+        this.recetas = []; 
     }
 
     getRecetas() {
