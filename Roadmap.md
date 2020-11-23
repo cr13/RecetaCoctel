@@ -30,6 +30,7 @@ El objetivo de este hito será definir las entidades principales de una receta y
 
 * [HU - Definir la entidad receta](https://github.com/cr13/RecetaCoctel/issues/22)
 * [HU - Definir la entidad Ingrediente](https://github.com/cr13/RecetaCoctel/issues/21)
+* [HU - Definir la entidad Valoración](https://github.com/cr13/RecetaCoctel/issues/25)
 * [HU - Insertar un ingrediente](https://github.com/cr13/RecetaCoctel/issues/24)
 * [HU - Insertar una receta](https://github.com/cr13/RecetaCoctel/issues/6)
 * [HU - Modificación de receta](https://github.com/cr13/RecetaCoctel/issues/7)
