@@ -8,9 +8,9 @@ class ControllerValoracion {
         this.valoraciones_recetas = [];
     }
 
-    //Funcion para añadir valoraciones a las recetas
-    addValoracionReceta(receta, val) {
-
+    //Función para añadir valoraciones a las recetas
+    addValoracionReceta(val) {
+        this.valoraciones_recetas.push(val);
     }
 
 }
