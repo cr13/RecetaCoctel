@@ -3,7 +3,7 @@ var controllerReceta = require("./ControllerReceta");
 
 class ControllerRanking {
     constructor() {
-        this.list_recetas = {};
+        this.list_recetas = [];
     }
 
     //Devolvera las 10 recetas mejor valoradas
