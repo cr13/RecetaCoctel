@@ -66,7 +66,7 @@ El gestor de tareas elegido ha sido **grunt**, ver justificación [aquí](https:
 
 ## Avance del proyecto
 
-Se han definido las HU como desarrollador, por ello, se ha reorganizado la asociado de cada clase con su HU correspondiente, además se han asociado las funciones que corresponde a cada HU por separado (evitando asociar múltiples HU a un solo commit). También se ha especificado la descripción de las entidades del proyecto en cada HU correspondiente.
+Se han definido las HU como desarrollador, por ello, se ha reorganizado la asociación de cada clase con su HU correspondiente, además se han asociado las funciones que corresponde a cada HU por separado (evitando asociar múltiples HU a un solo commit). También se ha especificado la descripción de las entidades del proyecto en cada HU correspondiente.
 
 Se han definido todas las clases necesarias para obtener un MVP, así como también se ha modificado el roadmap llamando de forma más significativa a las fases que en un principio asigne a cada MPV.
 
