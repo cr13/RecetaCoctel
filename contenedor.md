@@ -13,7 +13,10 @@ Durante los ejercicio, al realizar los pequeños proyectos en NodeJs, me tope co
 
 A continuación se muestra una captura de las imágenes que vamos a probar.
 
-![images docker](https://github.com/cr13/RecetaCoctel/blob/main/doc/img/h3/docker_images.png)
+<!-- ![images docker](https://github.com/cr13/RecetaCoctel/blob/main/doc/img/h3/docker_images.png) -->
+
+![images docker](img/docker_images.png)
+
 
 Como se puede observar en la ilustración, la prueba de node:15 es la que más ocupa por lo que ya estaríamos incumpliendo las buenas practicas. Entonces nos quedarían nodealpine y alpine que ocupan prácticamente lo mismo. 
 La prueba de google no es que ocupe mucho mas que las dos que vamos a elegir, pero no esta disponible en la última versión de node y se construye en dos fases aunque en la captura no aparece, para construir la imagen googlecontainernode14 se hace a partir de una imagen llamada gcr.io/distroless/nodejs con un tamaño similar (119MB).
