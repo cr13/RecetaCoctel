@@ -20,16 +20,16 @@ La prueba de google no es que ocupe mucho mas que las dos que vamos a elegir, pe
 
 Después de este cribado que se ha realizado nos queda nodealpine15 y alpine. Ahora vamos a comprobar el numero de capas que tiene cada una: 
 
-alpine --> 7 capas
-node:15.2.1-alpine3.10  --> 10 capas
-node:15 --> 14 capas
-googlecontainernode14 --> 5 capas
+- alpine --> 7 capas
+- node:15.2.1-alpine3.10  --> 10 capas
+- node:15 --> 14 capas
+- googlecontainernode14 --> 5 capas
 
 Se va intentar mejorar el Dockerfile para intentar reducir el número de capas, pero en esta primera versión realizada, la mejor imagen en cuanto a capas sería googlecontainernode14, seguida de alpine que sería la mejor opción en cuanto a buenas prácticas.
 
 ### Ref seguidas
 
-[Buenas prácticas construyendo imágenes Docker](https://medium.com/@serrodcal/buenas-pr%C3%A1cticas-construyendo-im%C3%A1genes-docker-8a4f14f7ad1d)
-[Buenas prácticas para escribir un Dockerfile](https://blog.arima.eu/es/2020/04/21/buenas-practicas-para-escribir-un-dockerfile.html)
+- [Buenas prácticas construyendo imágenes Docker](https://medium.com/@serrodcal/buenas-pr%C3%A1cticas-construyendo-im%C3%A1genes-docker-8a4f14f7ad1d)
+- [Buenas prácticas para escribir un Dockerfile](https://blog.arima.eu/es/2020/04/21/buenas-practicas-para-escribir-un-dockerfile.html)
 
 
