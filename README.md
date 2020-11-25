@@ -74,6 +74,3 @@ Para las [clases](https://github.com/cr13/RecetaCoctel#item1) desarrolladas, se 
 
 ## Elección correcta y justificada del contenedor base
 
-Para la elección del contenedor base, se ha tenido en cuenta todo lo aprendido en los [ejercicios](https://github.com/cr13/EjerciciosCC-20-21/blob/main/tema3.md) del temario, ya que en ellos se han instalado y aprendido a valorar varias imágenes base. También se han tenido en cuenta las buenas prácticas, donde aconsejan que la imagen debe ser ligera, con el número mínimo de capas posible y a ser posible usar una imagen de un proveedor de confianza ya que nos garantiza un nivel alto de seguridad, mantenibilidad y seguramente sera lo más liviana posible en cuanto a espacio.
-
-Durante los ejercicio, al realizar los pequeños proyectos en NodeJs, me tope con una imagen oficial de NodeJS instalada en la imagen alpine que es la más liviana que existe hasta el momento. Y puesto que este punto es un poco de investigación me he encontrado con otro buen exponente [Google Distroless Docker Images](https://github.com/GoogleContainerTools/distroless) que son imágenes que solo contienen la aplicación y sus dependencias de tiempo de ejecución. Esta version se ha descartado porque realiza una construcción en dos fases, lo cual se hablo en clase que no valía para nuestro proyecto.
