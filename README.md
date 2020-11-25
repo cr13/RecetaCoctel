@@ -74,3 +74,4 @@ Para las [clases](https://github.com/cr13/RecetaCoctel#item1) desarrolladas, se 
 
 ## Elección correcta y justificada del contenedor base
 
+La elección de la imagen base a sido **alpine**, ver justificación y pruebas realizadas [aquí](https://cr13.github.io/RecetaCoctel/contenedor.md)
