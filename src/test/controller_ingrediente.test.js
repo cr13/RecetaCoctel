@@ -21,6 +21,6 @@ describe("Función para añadir ingredientes", () => {
         expect(listIngredientes.getIngs().length).toEqual(3);
 
 
-    })
+    });
 });
 
