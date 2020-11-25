@@ -30,7 +30,7 @@ Después de este cribado que se ha realizado nos queda nodealpine15 y alpine. Ah
 
 Se va intentar mejorar el Dockerfile para intentar reducir el número de capas, pero en esta primera versión realizada, la mejor imagen en cuanto a capas sería googlecontainernode14, seguida de alpine que sería la mejor opción en cuanto a buenas prácticas.
 
-Se ha conseguido mejorar una capa utilizar una sentecia RUN en el Dockerfile.
+Se ha conseguido mejorar una capa utilizar una sentencia RUN en el Dockerfile.
 
 ### Ref seguidas
 
