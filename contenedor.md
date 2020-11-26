@@ -5,7 +5,7 @@ title: Contenedor
 
 ###### [Inicio](./) | [Roadmap](./Roadmap.html) | [HU](./hu.html) | [Tools Test](./aserciones_sis_pruebas.html) | [Contenedor](./contenedor.html) | [GitHubContainerRegistry](./githubcontainerregistry.html)
 
-## Elección correcta y justificada del contenedor base
+## Elección correcta y justificada del contenedor base y construcción de Dockerfile
 
 Para la elección del contenedor base, se ha tenido en cuenta todo lo aprendido en los [ejercicios](https://github.com/cr13/EjerciciosCC-20-21/blob/main/tema3.md) del temario, ya que en ellos se han instalado y aprendido a valorar varias imágenes base. También se han tenido en cuenta las buenas prácticas, donde aconsejan que la imagen debe ser ligera, con el número mínimo de capas posible y a ser posible usar una imagen de un proveedor de confianza ya que nos garantiza un nivel alto de seguridad, mantenibilidad y seguramente sera lo más liviana posible en cuanto a espacio.
 
@@ -35,12 +35,69 @@ Se ha conseguido mejorar una capa al utilizar una sola sentencia RUN en el Docke
 Como se puede comprobar en el [Dockerfile](https://github.com/cr13/RecetaCoctel/blob/main/Dockerfile),se ha intentado seguir las buenas prácticas defiendo:
 
 - Se ha utilizado la mejor imagen posible en cuanto a capas y tamaño.
-- El menor número de etiquetas y ejecuciones RUN
-- Se instala la última version de node
-- Se ha creado un grupo asignado un uid y no dejando que se asigne uno aleatorio, y igualmente se ha creado un usuario al cual se le ha asignado el grupo creado. Cumpliendo el requisito de utilizar un usuario sin privilegios.
-- Se utiliza COPY en vez de ADD y se copia solo los ficheros necesarios.
-- Para terminar se ha utilizado CMD en vez de ENTREPOINT y se ha definido en formato de vector en vez de string, por si en el futuro se utiliza Docker compose.
 
+```bash
+#Imagen y versión que usaremos de base
+ FROM alpine:latest
+```
+
+- El menor número de etiquetas (LABELS) y ejecuciones (RUN)
+
+Los labels que se han añadido son para indicar el nombre del autor y el repositorio del proyecto en GitHub Container Registry para que nos conecte el repositorio con el paquete.
+
+```bash
+LABEL maintainer="Cristobal <cr13@correo.ugr.es>" \
+    org.opencontainers.image.source="https://hub.docker.com/repository/docker/cr13/recetacoctel"
+   
+```
+
+La ejecución consiste en instalar la última version de node y grunt-cli.
+Además se ha creado un grupo de usuarios asignado el uid y no dejando que se asigne uno aleatorio, y igualmente se ha creado un usuario al cual se le ha asignado el grupo creado y especificando el shell a usar. Cumpliendo el requisito de utilizar un usuario sin privilegios.
+
+```bash
+
+RUN apk add --no-cache nodejs npm \
+    && npm install \
+    && npm install -g grunt-cli \
+    && addgroup -g 1000 node \
+    && adduser -u 1000 -G node -s /bin/sh -D cr13 
+```
+
+- Se hace uso de variables de entornos para especifica el espacio de trabajo, el cuál se ha creado en función de la sentencia de comprobación indicada en la [entrega de la práctica](http://jj.github.io/CC/documentos/proyecto/3.Docker.html)
+
+```bash
+
+WORKDIR /app/test
+
+```
+
+- Se utiliza COPY en vez de ADD y se copia solo los ficheros necesarios.
+
+Los ficheros que vamos a necesitar son:
+    - package.json y el package-lock.json
+    - el gestor de tareas y su archivo de configuración
+
+```bash
+
+COPY ["package*.json", "Gruntfile.js",".jshintrc", "./"]
+
+```
+
+- Se indica el usuario (sin privilegios) a utilizar para la ejecución de las tareas
+
+```bash
+
+USER cr13
+
+```
+
+- Para terminar se ha utilizado CMD en vez de ENTRYPOINT y se ha definido en formato de vector en vez de string, por si en el futuro se utiliza Docker compose.
+
+```bash
+
+CMD ["grunt","test"]
+
+```
 ### Ref seguidas
 
 - [Buenas prácticas construyendo imágenes Docker](https://medium.com/@serrodcal/buenas-pr%C3%A1cticas-construyendo-im%C3%A1genes-docker-8a4f14f7ad1d)
