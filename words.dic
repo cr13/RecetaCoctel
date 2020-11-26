@@ -63,6 +63,7 @@ CMSs
 CPU
 CPUs
 CREATED
+createRespositorydockerhub
 CRUD
 CSS
 Cassandra
@@ -70,6 +71,7 @@ CentOS
 Chai
 Cinder
 Circle
+ClasesDesarrolladas
 ClearDB
 Clojure
 CloudAnt
@@ -84,6 +86,10 @@ CoffeeScript
 Command
 Computing
 Conflict
+ControllerIngrediente
+ControllerRanking
+ControllerReceta
+ControllerValoracion
 CoreOS
 CouchDB
 Create
@@ -108,6 +114,7 @@ Django
 Docker
 Dockerfile
 Dockerfiles
+DockerHub
 Document
 Dokkur
 DomU
@@ -273,6 +280,7 @@ PHP
 PI
 PID
 PIDs
+PMV
 PNG
 PORT
 PORTS
@@ -324,6 +332,8 @@ Rex
 Riak
 Richards
 Rinse
+ROADMAP
+roadmap
 Ruby
 Running
 SADD
@@ -349,6 +359,7 @@ Servers
 Service
 Services
 Settings
+Setting
 Sharing
 Shippable
 Should
@@ -424,6 +435,7 @@ ZFS
 Zafra
 aaS
 account
+Accounts
 acervo
 aconsejable
 action
@@ -614,6 +626,7 @@ distributed
 distro
 distros
 div
+doc
 docco
 docker
 dockerd
@@ -744,6 +757,7 @@ hset
 html
 http
 https
+hu
 hub
 i
 idempotencia
@@ -822,6 +836,7 @@ like
 line
 liner
 link
+Linked
 linux
 list
 listarlos
@@ -902,6 +917,8 @@ mode
 modelización
 modprobe
 modularizar
+modularidad
+Modularidad
 mon
 monitorización
 monitorizar
@@ -939,6 +956,7 @@ nitrous
 noSQL
 node
 nodejs
+NodeJS
 none
 noop
 not
@@ -1079,6 +1097,7 @@ readlines
 realizarlo
 rearrancar
 recetilla
+RecetaCoctel
 recipe
 recipes
 recomendable
@@ -1092,6 +1111,7 @@ refactorizarlo
 referencial
 refs
 registerTask
+Registry
 releases
 remote
 remotes
