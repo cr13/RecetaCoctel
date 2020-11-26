@@ -13,6 +13,7 @@ WORKDIR /app/test
 COPY ["package*.json", "Gruntfile.js",".jshintrc", "./"]
 
 # Instalamos NodeJS, npm y grunt-cli
+# Se crea grupo y usuario sin previlegios
 RUN apk add --no-cache nodejs npm \
     && npm install \
     && npm install -g grunt-cli \
