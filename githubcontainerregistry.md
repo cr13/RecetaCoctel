@@ -13,7 +13,7 @@ Para ello, nos vamos a al menú que aparece al clickar en la foto de perfil y pu
 
 Una vez habilitado, vamos a subir nuestra imagen de docker a github. Se van a seguir los siguientes [pasos](https://docs.github.com/es/free-pro-team@latest/packages/managing-container-images-with-github-container-registry/connecting-a-repository-to-a-container-image#connecting-a-repository-to-a-container-image-on-the-command-line)
 
-Lo primero que vamos a necesitar va ser crear un token para acceder a github por consola de comandos. Se deja documentación para realizar este paso [aquí](https://docs.github.com/es/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
+Lo primero que se va a necesitar un token para acceder a github por consola de comandos. Se deja documentación para realizar este paso [aquí](https://docs.github.com/es/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
 
 Permisos que se le han concedido al token
 
@@ -21,9 +21,7 @@ Permisos que se le han concedido al token
 
 Cuando tengamos el token creado lo copiamos a un fichero en el home por ejemplo y lo llamamos con un nombre significativo. En mi caso lo voy a llamar <.gh_token>.  Otra opción es almacenarlo en una variable de entorno.
 
-Ahora vamos a continuar con la subida de nuestra imagen, siguiendo los pasos del tutorial, se nos quedaría así:
-
-Primero de todo hay que añadir el siguiente LABEL en el Dockerfile para que nos conecte el repositorio con el paquete.
+Ahora vamos a continuar con la subida de nuestra imagen, siguiendo los pasos del tutorial. Lo primero de todo, es que añadir el siguiente LABEL en el Dockerfile para que nos conecte el repositorio con el paquete.
 
 ```bash
 LABEL org.opencontainers.image.source="https://hub.docker.com/repository/docker/cr13/recetacoctel"
