@@ -28,9 +28,18 @@ Después de este cribado que se ha realizado nos queda nodealpine15 y alpine. Ah
 - node:15 --> 14 capas
 - googlecontainernode14 --> 5 capas
 
-Se va intentar mejorar el Dockerfile para intentar reducir el número de capas, pero en esta primera versión realizada, la mejor imagen en cuanto a capas sería googlecontainernode14, seguida de alpine que sería la mejor opción en cuanto a buenas prácticas.
+Se va intentar mejorar el Dockerfile para intentar reducir el número de capas, pero en esta primera versión realizada, la mejor imagen en cuanto a capas sería googlecontainernode14, seguida de alpine que sería la opción que vamos a utilizar por los motivos que se han ido comentando.
 
-Se ha conseguido mejorar una capa utilizar una sentencia RUN en el Dockerfile.
+Se ha conseguido mejorar una capa al utilizar una sola sentencia RUN en el Dockerfile.
+
+Como se puede comprobar en el [Dockerfile](https://github.com/cr13/RecetaCoctel/blob/main/Dockerfile),se ha intentado seguir las buenas prácticas defiendo:
+
+- Se ha utilizado la mejor imagen posible en cuanto a capas y tamaño.
+- El menor número de etiquetas y ejecuciones RUN
+- Se instala la última version de node
+- Se ha creado un grupo asignado un uid y no dejando que se asigne uno aleatorio, y igualmente se ha creado un usuario al cual se le ha asignado el grupo creado. Cumpliendo el requisito de utilizar un usuario sin privilegios.
+- Se utiliza COPY en vez de ADD y se copia solo los ficheros necesarios.
+- Para terminar se ha utilizado CMD en vez de ENTREPOINT y se ha definido en formato de vector en vez de string, por si en el futuro se utiliza Docker compose.
 
 ### Ref seguidas
 
