@@ -63,7 +63,7 @@ CMSs
 CPU
 CPUs
 CREATED
-createRespositorydockerhub
+createRepositorydockerhub
 CRUD
 CSS
 Cassandra
@@ -1279,6 +1279,7 @@ utilísimo
 v
 vServers
 vagrant
+ValoracionReceta
 var
 varchar
 vars
