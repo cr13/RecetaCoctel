@@ -38,4 +38,4 @@ COPY .jshintrc ./
 
 
 # Ejecuta grunt para los tests
-CMD [ "grunt test" ]
+CMD ["grunt","test"]
