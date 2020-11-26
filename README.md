@@ -68,7 +68,7 @@ El gestor de tareas elegido ha sido **grunt**, ver justificación [aquí](https:
 
 Se han definido las HU como desarrollador, por ello, se ha reorganizado la asociación de cada clase con su HU correspondiente, además se han asociado las funciones que corresponde a cada HU por separado (evitando asociar múltiples HU a un solo commit). También se ha especificado la descripción de las entidades del proyecto en cada HU correspondiente.
 
-Se han definido todas las clases necesarias para obtener un PMV, así como también se ha modificado el roadmap llamando de forma más significativa a las fases que en un principio asigne a cada MPV.
+Se han definido todas las clases necesarias para obtener un PMV, así como también se ha modificado el roadmap llamando de forma más significativa a las fases que en un principio asigne a cada PMV.
 
 Para las [clases](https://github.com/cr13/RecetaCoctel#ClasesDesarrolladas) desarrolladas, se han realizado algunos [test](https://github.com/cr13/RecetaCoctel/tree/main/src/test) de las más importantes, que son: [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/receta.test.js), [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/ingredientes.test.js), las clases controladoras [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_receta.test.js) y de [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_ingrediente.test.js).
 
