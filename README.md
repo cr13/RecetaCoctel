@@ -15,7 +15,7 @@ Para la resolución del problema descrito anteriormente, se va optar por utiliza
 
 Este proyecto se va a realizar en NodeJS, utilizando el framework node express. El motivo de su elección se ha dado tras valorar otras opciones como escala, go o python, visto que los demás compañeros han optado por estas opciones según comentaron en clase, he decido hacer algo diferente y por eso la elección de NodeJS.
 
-<a name="item1"></a>
+<a name="ClasesDesarrolladas"></a>
 ## Clases desarrolladas
 
 **Hasta el momento se han desarrollado las siguientes clases**
@@ -70,7 +70,7 @@ Se han definido las HU como desarrollador, por ello, se ha reorganizado la asoci
 
 Se han definido todas las clases necesarias para obtener un MVP, así como también se ha modificado el roadmap llamando de forma más significativa a las fases que en un principio asigne a cada MPV.
 
-Para las [clases](https://github.com/cr13/RecetaCoctel#item1) desarrolladas, se han realizado algunos [test](https://github.com/cr13/RecetaCoctel/tree/main/src/test) de las más importantes, que son: [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/receta.test.js), [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/ingredientes.test.js), las clases controladoras [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_receta.test.js) y de [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_ingrediente.test.js).
+Para las [clases](https://github.com/cr13/RecetaCoctel#ClasesDesarrolladas) desarrolladas, se han realizado algunos [test](https://github.com/cr13/RecetaCoctel/tree/main/src/test) de las más importantes, que son: [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/receta.test.js), [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/ingredientes.test.js), las clases controladoras [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_receta.test.js) y de [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_ingrediente.test.js).
 
 ## Elección correcta y justificada del contenedor base
 
@@ -95,3 +95,5 @@ Para poder utilizar Docker Hub, lo primero que hay que hacer es registrarse, una
 A continuación dejo mi [Respositorio DockerHub](https://hub.docker.com/repository/docker/cr13/recetacoctel).
 
 ## Uso de GitHub Container Registry
+
+La justificación de uso se puede ver [aquí](https://cr13.github.io/RecetaCoctel/githubcontainerregistry.html)
