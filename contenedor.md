@@ -32,7 +32,7 @@ Se va intentar mejorar el Dockerfile para intentar reducir el número de capas, 
 
 Se ha conseguido mejorar una capa al utilizar una sola sentencia RUN en el Dockerfile.
 
-Como se puede comprobar en el [Dockerfile](https://github.com/cr13/RecetaCoctel/blob/main/Dockerfile),se ha intentado seguir las buenas prácticas defiendo:
+Como se puede comprobar en el [Dockerfile](https://github.com/cr13/RecetaCoctel/blob/main/Dockerfile), se ha intentado seguir las buenas prácticas de forma que:
 
 - Se ha utilizado la mejor imagen posible en cuanto a capas y tamaño.
 
