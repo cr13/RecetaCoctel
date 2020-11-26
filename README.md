@@ -72,9 +72,9 @@ Se han definido todas las clases necesarias para obtener un PMV, así como tambi
 
 Para las [clases](https://github.com/cr13/RecetaCoctel#ClasesDesarrolladas) desarrolladas, se han realizado algunos [test](https://github.com/cr13/RecetaCoctel/tree/main/src/test) de las más importantes, que son: [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/receta.test.js), [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/ingredientes.test.js), las clases controladoras [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_receta.test.js) y de [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_ingrediente.test.js).
 
-## Elección correcta y justificada del contenedor base
+## Elección correcta, justificada del contenedor base y Dockerfile desarrollado
 
-La elección de la imagen base a sido **alpine**, ver justificación y pruebas realizadas [aquí](https://cr13.github.io/RecetaCoctel/contenedor.html)
+La elección de la imagen base a sido **alpine**, ver justificación, pruebas realizadas y fichero [Dockerfile](https://github.com/cr13/RecetaCoctel/blob/main/Dockerfile) resultante [aquí](https://cr13.github.io/RecetaCoctel/contenedor.html)
 
 ### Instrucciones de construcción y ejecución
 
