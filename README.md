@@ -13,7 +13,7 @@ Para la resolución del problema descrito anteriormente, se va optar por utiliza
 
 ## Lenguaje
 
-Este proyecto se va a realizar en NodeJS, utilizando el framework node express. El motivo de su elección se ha dado tras valorar otras opciones como escala, go o python, visto que los demás compañeros han optado por estas opciones según comentaron en clase, he decido hacer algo diferente y por eso la elección de NodeJS.
+Este proyecto se va a realizar en NodeJS, utilizando el framework node express. El motivo de su elección se ha dado tras valorar otras opciones como escala, Go o python, visto que los demás compañeros han optado por estas opciones según comentaron en clase, he decido hacer algo diferente y por eso la elección de NodeJS.
 
 <a name="ClasesDesarrolladas"></a>
 ## Clases desarrolladas
@@ -40,7 +40,7 @@ Las historias de usuario definidas hasta el momento se puede ver [aquí.](https:
 
 ## Elección y justificación de biblioteca de aserciones y sistema de pruebas.
 
-Se ha seleccionado **jest** para saber más [aquí.](https://cr13.github.io/RecetaCoctel/aserciones_sis_pruebas.html)
+Se ha seleccionado **Jest** para saber más [aquí.](https://cr13.github.io/RecetaCoctel/aserciones_sis_pruebas.html)
 
 ## Gestor de tareas 
 
@@ -68,7 +68,7 @@ El gestor de tareas elegido ha sido **grunt**, ver justificación [aquí](https:
 
 Se han definido las HU como desarrollador, por ello, se ha reorganizado la asociación de cada clase con su HU correspondiente, además se han asociado las funciones que corresponde a cada HU por separado (evitando asociar múltiples HU a un solo commit). También se ha especificado la descripción de las entidades del proyecto en cada HU correspondiente.
 
-Se han definido todas las clases necesarias para obtener un MVP, así como también se ha modificado el roadmap llamando de forma más significativa a las fases que en un principio asigne a cada MPV.
+Se han definido todas las clases necesarias para obtener un PMV, así como también se ha modificado el roadmap llamando de forma más significativa a las fases que en un principio asigne a cada MPV.
 
 Para las [clases](https://github.com/cr13/RecetaCoctel#ClasesDesarrolladas) desarrolladas, se han realizado algunos [test](https://github.com/cr13/RecetaCoctel/tree/main/src/test) de las más importantes, que son: [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/receta.test.js), [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/ingredientes.test.js), las clases controladoras [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_receta.test.js) y de [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_ingrediente.test.js).
 
@@ -90,9 +90,9 @@ docker run -t -v `pwd`:/app/test cr13/recetascoctel
 
 ## Subida a Docker Hub
 
-Para poder utilizar Docker Hub, lo primero que hay que hacer es registrarse, una vez registrados hay que ir a Account Setting --> Linked Accounts y asociar nuestra cuenta de GitHub. Una vez hecho esto solo hay que crear el repositorio. (Ejemplo creación)[./doc/img/h3/createRespositorydockerhub.png]
+Para poder utilizar Docker Hub, lo primero que hay que hacer es registrarse, una vez registrados hay que ir a Account Setting --> Linked Accounts y asociar nuestra cuenta de GitHub. Una vez hecho esto solo hay que crear el repositorio. (Ejemplo creación)[./doc/img/h3/createRepositorydockerhub.png]
 
-A continuación dejo mi [Respositorio DockerHub](https://hub.docker.com/repository/docker/cr13/recetacoctel).
+A continuación dejo mi [Repositorio DockerHub](https://hub.docker.com/repository/docker/cr13/recetacoctel).
 
 ## Uso de GitHub Container Registry
 
