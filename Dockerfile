@@ -6,8 +6,8 @@
 
 # Indica el autor de la imagen, repositorio github y dockerhub
 LABEL maintainer="Cristobal <cr13@correo.ugr.es>" \
-    com.recetacoctel.repository="https://github.com/cr13/RecetaCoctel/" \
-    org.opencontainers.image.source="https://hub.docker.com/repository/docker/cr13/recetacoctel"
+    com.recetacoctel.repository="https://github.com/cr13/RecetaCoctel/" 
+LABEL org.opencontainers.image.source https://hub.docker.com/repository/docker/cr13/recetacoctel
    
 #Creamos el directorio de trabajo
 WORKDIR /app/test
