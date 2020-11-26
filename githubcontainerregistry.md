@@ -57,7 +57,7 @@ Si deseamos publicar nuestra imagen debemos acceder a Package Setting y en Dange
 
 Por último es aconsejable crear un github actions para cuando realicemos un push en el repositorio se actualice la imagen automáticamente. 
 
-Para ello, nos vamos a la pestaña actions de nuestro repositorio y pulsamos en new workflow. Nos aparecen una serie de templates, nosotros necesitamos el template **Publish Docker Container** que podemos localizar en el partado "Continuous integration workflows". Una vez localizado pulsamos en el botón "set up in this workflow". Se nos abre un editor y si nos fijamos en el código escrito, debemos indicar el nombre que se le va a dar a la imagen en "IMAGE_NAME" y si bajamos la linea 54 vemos secrets.GITHUB_TOKEN, el cual debemos cambiar ya que no es un nombre valido y pulsamos en start commit, automáticamente se nos crea el fichero **docker-publish.yml**.
+Para ello, nos vamos a la pestaña actions de nuestro repositorio y pulsamos en new workflow. Nos aparecen una serie de templates, nosotros necesitamos el template **Publish Docker Container** que podemos localizar en el partado "Continuous integration workflows". Una vez localizado pulsamos en el botón "set up in this workflow". Se nos abre un editor y si nos fijamos en el código escrito, debemos indicar el nombre que se le va a dar a la imagen en "IMAGE_NAME" y si bajamos la linea 54 vemos secrets.GITHUB_TOKEN, el cual debemos cambiar ya que no es un nombre valido y pulsamos en start commit, automáticamente se nos crea el fichero **[docker-publish.yml](https://github.com/cr13/RecetaCoctel/blob/main/.github/workflows/docker-publish.yml)**.
 
 Con esto ya tendríamos nuestro flujo de trabajo activo, solo nos falta añadir el secrets que hemos definido en el workflow. Para ello, vamos a Settings del repositorio --> Secrets y pulsamos en "New repository secret".
 
@@ -65,5 +65,28 @@ Nos aparece un formulario en el cual debemos especificar el nombre y el valor.
 
 Nombre debe ser el mismo que vimos en el workflow, en nuestro caso "GITHUB_TOKEN".
 Valor debe ser el Token, en nuestro caso vamos a reutilizar el mismo que hemos creado en este documento para subir la imagen de docker a github.
+
+Con el github action que acabamos de crear lo que realmente hace es publicar la imagen de docker pero lo que nosotros queremos hacer es actualizar la imagen del container registry. Para ello vamos a duplicar el docker-publish.yml y añadimos los siguientes cambios:
+
+- En la linea 54, que ya vimos anteriormente se realiza el login, entonces debemos cambiar "docker.pkg.github.com" por "ghcr.io" quedando de la siguiente forma:
+
+```bash
+
+docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+```
+
+- En la linea 58, debemos cambiar la imagen a subir reemplazando "doker.pkg.github.com/${{ github.repository }}" por "ghcr.io/${{ github.actor }}" de forma que quedaría así:
+
+
+
+```bash
+
+IMAGE_ID=ghcr.io/${{ github.actor }}/$IMAGE_NAME
+
+```
+Se puede ver [aquí](https://github.com/cr13/RecetaCoctel/blob/main/.github/workflows/docker-publish-container-registry.yml).
+
+Ahora si tendríamos nuestro flujo de tarea para actualizar la imagen publicada en GitHub Container Registry ya que esta opción sustituye a Github Docker images (que es lo que hace nuestro primer workflow).
 
 ![secret](./img/secret.png)
