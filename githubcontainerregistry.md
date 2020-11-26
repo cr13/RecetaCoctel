@@ -59,7 +59,7 @@ Si deseamos publicar nuestra imagen debemos acceder a Package Setting y en Dange
 
 Por último es aconsejable crear un github actions para cuando realicemos un push en el repositorio se actualice la imagen automáticamente. 
 
-Para ello, nos vamos a la pestaña actions de nuestro repositorio y pulsamos en new workflow. Nos aparecen una serie de templates, nosotros necesitamos el template **Publish Docker Container** que podemos localizar en el partado "Continuous integration workflows". Una vez localizado pulsamos en el botón "set up in this workflow". Se nos abre un editor y si nos fijamos en el código escrito, en la linea 54 que vamos a necesitar un secrets. Por lo tanto cambiamos el nombre de GITHUB_TOKEN ya que no es un nombre valido y pulsamos en start commit, automáticamente se nos crea el fichero **docker-publish.yml**.
+Para ello, nos vamos a la pestaña actions de nuestro repositorio y pulsamos en new workflow. Nos aparecen una serie de templates, nosotros necesitamos el template **Publish Docker Container** que podemos localizar en el partado "Continuous integration workflows". Una vez localizado pulsamos en el botón "set up in this workflow". Se nos abre un editor y si nos fijamos en el código escrito, debemos indicar el nombre que se le va a dar a la imagen en "IMAGE_NAME" y si bajamos la linea 54 vemos secrets.GITHUB_TOKEN, el cual debemos cambiar ya que no es un nombre valido y pulsamos en start commit, automáticamente se nos crea el fichero **docker-publish.yml**.
 
 Con esto ya tendríamos nuestro flujo de trabajo activo, solo nos falta añadir el secrets que hemos definido en el workflow. Para ello, vamos a Settings del repositorio --> Secrets y pulsamos en "New repository secret".
 
