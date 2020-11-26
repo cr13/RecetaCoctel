@@ -38,7 +38,9 @@ module.exports = function (grunt) {
     //Tarea para ejecución en integración continua o para instalar 
     //dependencias sin modificar el package-lock.json
     grunt.registerTask("ci", ["shell:npm_ci"]);
-    //Ejecuta tests
-    grunt.registerTask('default', ['shell:npm_test_jest', 'jshint']);
+    //Tarea para ejecutar tests
+    grunt.registerTask('test', ['shell:npm_test_jest']);
+    //Tarea por defecto comprueba sintaxis
+    grunt.registerTask('default', ["jshint"]);    
 
 };
