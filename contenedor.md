@@ -21,7 +21,7 @@ A continuación se muestra una captura de las imágenes que vamos a probar.
 Como se puede observar en la ilustración, la prueba de node:15 es la que más ocupa por lo que ya estaríamos incumpliendo las buenas practicas. Entonces nos quedarían nodealpine y alpine que ocupan prácticamente lo mismo. 
 La prueba de google no es que ocupe mucho mas que las dos que vamos a elegir, pero no esta disponible en la última versión de node y se construye en dos fases aunque en la captura no aparece, para construir la imagen googlecontainernode14 se hace a partir de una imagen llamada gcr.io/distroless/nodejs con un tamaño similar (119MB).
 
-Después de este cribado que se ha realizado nos queda nodealpine15 y alpine. Ahora vamos a comprobar el numero de capas que tiene cada una: 
+Después de este cribado que se ha realizado nos queda nodealpine15 y alpine. Ahora vamos a comprobar el numero de capas que tiene cada una. Para ello, podemos usar la herramienta jq vista en los [ejercicios del tema 3](https://github.com/cr13/EjerciciosCC-20-21/blob/main/tema3.md) o como yo lo he consulado, utilizando el plugins Docker de visual code. 
 
 - alpine --> 7 capas
 - node:15.2.1-alpine3.10  --> 10 capas
@@ -30,7 +30,11 @@ Después de este cribado que se ha realizado nos queda nodealpine15 y alpine. Ah
 
 Se va intentar mejorar el Dockerfile para intentar reducir el número de capas, pero en esta primera versión realizada, la mejor imagen en cuanto a capas sería googlecontainernode14, seguida de alpine que sería la opción que vamos a utilizar por los motivos que se han ido comentando.
 
-Se ha conseguido mejorar una capa al utilizar una sola sentencia RUN en el Dockerfile.
+Se ha conseguido mejorar al utilizar una sola sentencia RUN en el Dockerfile.
+
+Resultado final, utilizando el plugin Docker de visual code.
+
+![images docker](img/capas_imagen.png)
 
 Como se puede comprobar en el [Dockerfile](https://github.com/cr13/RecetaCoctel/blob/main/Dockerfile), se ha intentado seguir las buenas prácticas de forma que:
 
