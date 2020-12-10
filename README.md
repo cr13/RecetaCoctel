@@ -2,6 +2,8 @@
 
 Proyecto para la asignatura de Cloud Computing I 
 
+## [Descripción del problema](./doc/desc_prob.md)
+
 ## Arquitectura
 
 Para la resolución del problema descrito anteriormente, se va optar por utilizar una arquitectura de microservicios, el motivo de su elección ha sido porque *se necesita que la aplicación sea accesible para un gran número de usuarios, por lo tanto esta arquitectura es la mejor para resolver grandes volúmenes de peticiones*, además de los beneficios que nos aporta dicha arquitectura, tales como:
