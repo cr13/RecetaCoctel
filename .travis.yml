@@ -1,6 +1,11 @@
 language: node_js
+
 node_js:
+  - node 
+  - lts/*
   - "v15.0.1"
+  - "12"
+
 before_install:
   - npm install grunt-cli
 
