@@ -26,7 +26,7 @@ USER cr13
 COPY --chown=cr13:node ["package*.json", "Gruntfile.js",".jshintrc", "./"]
 
 # Se instala grunt en local
-RUN npm install grunt-cli && grunt install
+RUN npm ci grunt-cli && grunt ci
 
 # Registramos node_modules en el path para que localize las dependencias
 ENV PATH=/node_modules/.bin:$PATH
