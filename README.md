@@ -62,10 +62,7 @@ El gestor de tareas elegido ha sido **grunt**, ver justificación [aquí](https:
     npm i -D grunt-cli
 
     # Instala las dependencias necesarias.
-    grunt install   
-
-    # Instalación limpia de las dependencias, ideal para integración continua.
-    grunt ci        
+    grunt install        
 
     # Ejecuta tarea por defecto, en mi caso ejecuta los test y el plugin para comprobar sintaxis.
     grunt           
@@ -108,8 +105,13 @@ La justificación de uso se puede ver [aquí](https://cr13.github.io/RecetaCocte
 
 ## Sistemas de Integración Continua
 
-Se van a instalar dos sistemas de integración continua [Travis-ci](https://travis-ci.com/), GitHub Actions y [CircleCI](https://circleci.com/). Existen otras alternativas como [Appveyor](https://www.appveyor.com/), [Jenkins](https://www.jenkins.io/), [Bamboo](https://www.atlassian.com/es/software/bamboo) entre otros.
+Para llevar a cabo la integración continua de mi proyecto, se va a probar:
 
-Para la justificación de uso de los dos sistemas CI se puede consultar [aquí](https://cr13.github.io/RecetaCoctel/ci.html).
+1. [Travis-ci](https://travis-ci.com/) donde se van a testear en las versiones más recientes de NodeJS, justificación de uso [aquí](https://cr13.github.io/RecetaCoctel/ci.html#travisci)
 
-Dato a tener en cuenta, si no queremos que se ejecuten podemos usa [skip ci] en los commits.
+2. GitHub Actions CI donde se probaran dos versiones antiguas de NodeJS, ver justificación [aquí](https://cr13.github.io/RecetaCoctel/ci.html#actionsci)
+
+3. [**CircleCI**](https://circleci.com/) donde utilizaremos un contenedor docker para realizar los test, justificación de uso [aquí](https://cr13.github.io/RecetaCoctel/ci.html#circleci). 
+
+
+Dato a tener en cuenta, si no queremos que se ejecuten los sistemas, podemos usa [skip ci] en los commits.
