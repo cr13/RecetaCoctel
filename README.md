@@ -2,7 +2,9 @@
 
 Proyecto para la asignatura de Cloud Computing I 
 
-[![Build Status](https://travis-ci.com/cr13/RecetaCoctel.svg?branch=main)](https://travis-ci.com/cr13/RecetaCoctel)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/cr13/recetacoctel)  [![Build Status](https://travis-ci.com/cr13/RecetaCoctel.svg?branch=main)](https://travis-ci.com/cr13/RecetaCoctel)
+
+
 
 ## [Descripción del problema](./doc/desc_prob.md)
 
@@ -105,6 +107,6 @@ La justificación de uso se puede ver [aquí](https://cr13.github.io/RecetaCocte
 
 ## Sistemas de Integración Continua
 
-Se van a instalar dos sistemas de integración continua Travis-ci y CircleCI. Existen otras alternativas como [Appveyor](https://www.appveyor.com/), [Jenkins](https://www.jenkins.io/), [Bamboo](https://www.atlassian.com/es/software/bamboo) entre otros.
+Se van a instalar dos sistemas de integración continua [Travis-ci](https://travis-ci.com/) y [CircleCI](https://circleci.com/). Existen otras alternativas como [Appveyor](https://www.appveyor.com/), [Jenkins](https://www.jenkins.io/), [Bamboo](https://www.atlassian.com/es/software/bamboo) entre otros.
 
 Para la justificación de uso de los dos sistemas CI se puede consultar [aquí](https://cr13.github.io/RecetaCoctel/ci.html).
