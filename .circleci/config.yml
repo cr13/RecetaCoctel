@@ -6,14 +6,14 @@ jobs:
     steps:
       - checkout
       #Log into registry
-      run: echo "${{ secrets.MY_GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+      - run: echo "${{ secrets.MY_GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
       #Se construye la imagen 
-      run: docker build -t cr13/recetascoctel .
+      - run: docker build -t cr13/recetascoctel .
 
   test:
     steps:
       - checkout
-      run: docker run -t -v `pwd`:/app/test cr13/recetascoctel
+      - run: docker run -t -v `pwd`:/app/test cr13/recetascoctel
 
 # Orchestrate our job run sequence
 workflows:
