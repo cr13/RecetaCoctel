@@ -11,6 +11,6 @@ before_install:
   - npm install grunt-cli
 
 install:
-  - grunt ci
+  - grunt install
 
 script: grunt test
