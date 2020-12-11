@@ -56,26 +56,28 @@ LABEL maintainer="Cristobal <cr13@correo.ugr.es>" \
 ```
 
 La ejecución consiste en instalar la última version de node y grunt-cli.
-Además se ha creado un grupo de usuarios asignado el uid y no dejando que se asigne uno aleatorio, y igualmente se ha creado un usuario al cual se le ha asignado el grupo creado y especificando el shell a usar. Cumpliendo el requisito de utilizar un usuario sin privilegios.
+Además se ha creado un grupo de usuarios asignado el uid y no dejando que se asigne uno aleatorio, y igualmente se ha creado un usuario al cual se le ha asignado el grupo creado y especificando el shell a usar. Cumpliendo el requisito de utilizar un usuario sin privilegios. Además se van a crear los directorios de node_modules y test. Para finalizar asignamos al usuario creado de propietario del directorio app.
 
 ```bash
 
 RUN apk add --no-cache nodejs npm \
-    && npm install \
     && npm install -g grunt-cli \
     && addgroup -g 1000 node \
-    && adduser -u 1000 -G node -s /bin/sh -D cr13 
+    && adduser -u 1000 -G node -s /bin/sh -D cr13 \ 
+    && mkdir -p /app/node_modules \
+    && mkdir -p /app/test \
+    && chown -R cr13:node /app
 ```
 
 - Se hace uso de variables de entornos para especifica el espacio de trabajo, el cuál se ha creado en función de la sentencia de comprobación indicada en la [entrega de la práctica](http://jj.github.io/CC/documentos/proyecto/3.Docker.html)
 
 ```bash
 
-WORKDIR /app/test
+WORKDIR /app
 
 ```
 
-- Se utiliza COPY en vez de ADD y se copia solo los ficheros necesarios.
+- Se utiliza COPY en vez de ADD y se copia solo los ficheros necesarios, estableciendo de propietario el usuario creado.
 
 Los ficheros que vamos a necesitar son:
     - package.json y el package-lock.json
@@ -83,7 +85,7 @@ Los ficheros que vamos a necesitar son:
 
 ```bash
 
-COPY ["package*.json", "Gruntfile.js",".jshintrc", "./"]
+COPY --chown=cr13:node ["package*.json", "Gruntfile.js",".jshintrc", "./"]
 
 ```
 
@@ -92,6 +94,23 @@ COPY ["package*.json", "Gruntfile.js",".jshintrc", "./"]
 ```bash
 
 USER cr13
+
+```
+
+- Se instala grunt de forma local, lo lógico es que se usara npm ci, ya que es lo ideal para integración continua, pero al tener instalado el framework express (el cuál no es necesario), me obliga a utilizar npm install.
+
+```bash
+
+RUN npm install grunt-cli && grunt install
+
+```
+
+- Registramos node_modules en el path para que localize las dependencias. Esto se ha realizado para evitar problemas de permisos con el usuario. Al cambiar la ruta del directorio de node_modules al directorio app del cual es propietario nuestro usuario, solucionamos los problemas de instalar grunt en local por un usuarios sin privilegios.
+
+
+```bash
+
+ENV PATH=/node_modules/.bin:$PATH
 
 ```
 
