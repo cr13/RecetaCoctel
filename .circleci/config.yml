@@ -11,6 +11,9 @@ jobs:
       #Se obtiene la imagen 
       - run: docker pull cr13/recetacoctel
 
+      - run: docker run -t -v `pwd`:/app/test cr13/recetascoctel
+
+
   test:
     machine: true
     steps:
@@ -18,7 +21,7 @@ jobs:
       #Log into registry
       - run: echo "$DOCKERHUB_PASSWORD" | docker login --username $CIRCLE_USERNAME  --password-stdin
       # Se ejecuta el test
-      - run: docker run -t -v `pwd`:/app/test cr13/recetascoctel
+      # - run: docker run -t -v `pwd`:/app/test cr13/recetascoctel
 
 # Orchestrate our job run sequence
 workflows:
