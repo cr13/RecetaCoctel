@@ -9,7 +9,7 @@ jobs:
       #Log into registry
       - run: echo "$DOCKERHUB_PASSWORD" | docker login --username $CIRCLE_USERNAME  --password-stdin
       #Se obtiene la imagen 
-      - run: docker push cr13/recetacoctel:tagname
+      - run: docker pull cr13/recetacoctel
 
   test:
     machine: true
