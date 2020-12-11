@@ -110,3 +110,5 @@ La justificación de uso se puede ver [aquí](https://cr13.github.io/RecetaCocte
 Se van a instalar dos sistemas de integración continua [Travis-ci](https://travis-ci.com/), GitHub Actions y [CircleCI](https://circleci.com/). Existen otras alternativas como [Appveyor](https://www.appveyor.com/), [Jenkins](https://www.jenkins.io/), [Bamboo](https://www.atlassian.com/es/software/bamboo) entre otros.
 
 Para la justificación de uso de los dos sistemas CI se puede consultar [aquí](https://cr13.github.io/RecetaCoctel/ci.html).
+
+Dato a tener en cuenta, si no queremos que se ejecuten podemos usa [skip ci] en los commits.
