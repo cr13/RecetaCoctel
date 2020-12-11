@@ -2,7 +2,7 @@ version: 2.1
 
 # Define the jobs we want to run for this project
 jobs:
-  build:
+  test:
     docker:
       - image:  cr13/recetacoctel:latest
         auth:
@@ -15,20 +15,8 @@ jobs:
       - run: grunt test
 
 
-  # test:
-  #   machine: true
-  #   steps:
-  #     - checkout
-  #     #Log into registry
-  #     - run: echo "$DOCKERHUB_PASSWORD" | docker login --username $CIRCLE_USERNAME  --password-stdin
-  #     # Se ejecuta el test
-  #     # - run: docker run -t -v `pwd`:/app/test cr13/recetascoctel
-
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
     jobs:
-      - build
-      # - test:
-      #     requires:
-      #       - build
+      - test
