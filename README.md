@@ -2,7 +2,8 @@
 
 Proyecto para la asignatura de Cloud Computing I 
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/cr13/recetacoctel)  [![Travis Status](https://travis-ci.com/cr13/RecetaCoctel.svg?branch=main)](https://travis-ci.com/cr13/RecetaCoctel) [![Node JS CI Status](https://github.com/cr13/RecetaCoctel/actions?query=workflow%3A%22Node.js+CI%22/badge.svg)](https://github.com/cr13/RecetaCoctel/actions?query=workflow%3A%22Node.js+CI%22)  [![CircleCI Status](https://app.circleci.com/pipelines/github/cr13/RecetaCoctel.svg?style=shield)](https://app.circleci.com/pipelines/github/cr13/RecetaCoctel?branch=main)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/cr13/recetacoctel)  [![Travis Status](https://travis-ci.com/cr13/RecetaCoctel.svg?branch=main)](https://travis-ci.com/cr13/RecetaCoctel) 
+[![Node JS CI Status](https://github.com/cr13/RecetaCoctel/workflows/Node.js+CI%22/badge.svg)](https://github.com/cr13/RecetaCoctel/actions?query=workflow%3A%22Node.js+CI%22)  [![CircleCI Status](https://circleci.com/gh/cr13/RecetaCoctel.svg?style=shield)](https://app.circleci.com/pipelines/github/cr13/RecetaCoctel?branch=main)
 
 
 
