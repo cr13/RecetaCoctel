@@ -3,6 +3,7 @@ version: 2.1
 # Define the jobs we want to run for this project
 jobs:
   build:
+    machine: true
     steps:
       - checkout
       #Log into registry
@@ -11,6 +12,7 @@ jobs:
       - run: docker build -t cr13/recetascoctel .
 
   test:
+    machine: true
     steps:
       - checkout
       - run: docker run -t -v `pwd`:/app/test cr13/recetascoctel
