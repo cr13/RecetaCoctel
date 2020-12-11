@@ -7,16 +7,17 @@ jobs:
     steps:
       - checkout
       #Log into registry
-      # - run: echo "$DOCKERHUB_PASSWORD" | docker login --username $DOCKERHUB_USERNAME  --password-stdin
+      - run: echo "$DOCKERHUB_PASSWORD" | docker login --username $CIRCLE_USERNAME  --password-stdin
       #Se construye la imagen 
-      - run: echo "${{ secrets.MY_GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ CIRCLE_USERNAME }} --password-stdin
-
       - run: docker build -t cr13/recetascoctel .
 
   test:
     machine: true
     steps:
       - checkout
+      #Log into registry
+      - run: echo "$DOCKERHUB_PASSWORD" | docker login --username $CIRCLE_USERNAME  --password-stdin
+      # Se ejecuta el test
       - run: docker run -t -v `pwd`:/app/test cr13/recetascoctel
 
 # Orchestrate our job run sequence
