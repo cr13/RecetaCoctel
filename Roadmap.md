@@ -22,7 +22,7 @@ title: Roadmap
 La planificación definida para este proyecto va estar compuesta por los siguientes hitos (aunque conforme se vaya desarrollando el proyecto podrían salir nuevos hitos.):
 
 
-## Hito 1: Crear un prototipo minimamente viable
+## Hito 1: Crear un prototipo mínimamente viable
 
 El objetivo de este hito será definir las entidades principales de una receta y de un ingrediente, ya que una receta estará compuesta de uno o más ingredientes. También se definirán los métodos para gestionar la receta e ingrediente. Además se definirá un método para obtener una receta por titulo/nombre y otro para que los usuarios puedan dar una valoración a la receta.
 
