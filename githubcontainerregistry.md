@@ -7,7 +7,7 @@ title:  GitHubContainerRegistry
 
 ## Uso de registros alternativos y públicos de contenedores.
 
-Para este punto se va utilizar GitHub Container Registry, si nos vamos a la [documentación](https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry) oficial, nos dice que lo primero que debemos hacer para que funciones es habilitar el [soporte mejorado para contenedores](https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/enabling-improved-container-support).
+Para este punto se va utilizar **GitHub Container Registry**, si nos vamos a la [documentación](https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry) oficial, nos dice que lo primero que debemos hacer para que funciones es habilitar el [soporte mejorado para contenedores](https://docs.github.com/en/free-pro-team@latest/packages/getting-started-with-github-container-registry/enabling-improved-container-support).
 
 Para ello, nos vamos a al menú que aparece al clickar en la foto de perfil y pulsamos en **Feature preview** y habilitamos **Improved container support**.
 
