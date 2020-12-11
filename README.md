@@ -95,7 +95,7 @@ docker run -t -v `pwd`:/app/test cr13/recetascoctel
 
 ## Subida a Docker Hub
 
-Para poder utilizar Docker Hub, lo primero que hay que hacer es registrarse, una vez registrados hay que ir a Account Setting --> Linked Accounts y asociar nuestra cuenta de GitHub. Una vez hecho esto solo hay que crear el repositorio. (Ejemplo creación)[./doc/img/h3/createRepositorydockerhub.png]
+Para poder utilizar Docker Hub, lo primero que hay que hacer es registrarse, una vez registrados hay que ir a Account Setting --> Linked Accounts y asociar nuestra cuenta de GitHub. Una vez hecho esto solo hay que crear el repositorio. [Ejemplo creación](./doc/img/h3/createRepositorydockerhub.png)
 
 A continuación dejo mi [Repositorio DockerHub](https://hub.docker.com/repository/docker/cr13/recetacoctel).
 
@@ -111,7 +111,7 @@ Para llevar a cabo la integración continua de mi proyecto, se va a probar:
 
 2. GitHub Actions CI donde se probaran dos versiones antiguas de NodeJS, ver justificación [aquí](https://cr13.github.io/RecetaCoctel/ci.html#actionsci)
 
-3. [**CircleCI**](https://circleci.com/) donde utilizaremos un contenedor docker para realizar los test, justificación de uso [aquí](https://cr13.github.io/RecetaCoctel/ci.html#circleci). 
+3. [CircleCI](https://circleci.com/) donde utilizaremos un contenedor docker para realizar los test, justificación de uso [aquí](https://cr13.github.io/RecetaCoctel/ci.html#circleci). 
 
 
 Dato a tener en cuenta, si no queremos que se ejecuten los sistemas, podemos usa [skip ci] en los commits.
