@@ -2,6 +2,8 @@
 
 Proyecto para la asignatura de Cloud Computing I 
 
+[![Build Status](https://travis-ci.com/cr13/RecetaCoctel.svg?branch=main)](https://travis-ci.com/cr13/RecetaCoctel)
+
 ## [Descripción del problema](./doc/desc_prob.md)
 
 ## Arquitectura
@@ -18,6 +20,7 @@ Para la resolución del problema descrito anteriormente, se va optar por utiliza
 Este proyecto se va a realizar en NodeJS, utilizando el framework node express. El motivo de su elección se ha dado tras valorar otras opciones como escala, Go o python, visto que los demás compañeros han optado por estas opciones según comentaron en clase, he decido hacer algo diferente y por eso la elección de NodeJS.
 
 <a name="ClasesDesarrolladas"></a>
+
 ## Clases desarrolladas
 
 **Hasta el momento se han desarrollado las siguientes clases**
@@ -68,7 +71,7 @@ El gestor de tareas elegido ha sido **grunt**, ver justificación [aquí](https:
 
 ## Avance del proyecto
 
-Se han definido las HU como desarrollador, por ello, se ha reorganizado la asociación de cada clase con su HU correspondiente, además se han asociado las funciones que corresponde a cada HU por separado (evitando asociar múltiples HU a un solo commit). También se ha especificado la descripción de las entidades del proyecto en cada HU correspondiente.
+Se han definido las issues como desarrollador, para ello, se ha reorganizado la asociación de cada clase con su issue correspondiente, además se han asociado las funciones que corresponde a cada HU por separado (evitando asociar múltiples HU a un solo commit). También se ha especificado la descripción de las entidades del proyecto en cada HU correspondiente.
 
 Se han definido todas las clases necesarias para obtener un PMV, así como también se ha modificado el roadmap llamando de forma más significativa a las fases que en un principio asigne a cada PMV.
 
@@ -99,3 +102,9 @@ A continuación dejo mi [Repositorio DockerHub](https://hub.docker.com/repositor
 ## Uso de GitHub Container Registry
 
 La justificación de uso se puede ver [aquí](https://cr13.github.io/RecetaCoctel/githubcontainerregistry.html)
+
+## Sistemas de Integración Continua
+
+Se van a instalar dos sistemas de integración continua Travis-ci y CircleCI. Existen otras alternativas como [Appveyor](https://www.appveyor.com/), [Jenkins](https://www.jenkins.io/), [Bamboo](https://www.atlassian.com/es/software/bamboo) entre otros.
+
+Para la justificación de uso de los dos sistemas CI se puede consultar [aquí](https://cr13.github.io/RecetaCoctel/ci.html).
