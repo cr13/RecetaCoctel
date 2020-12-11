@@ -2,7 +2,7 @@
 
 Proyecto para la asignatura de Cloud Computing I 
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/cr13/recetacoctel)  [![Build Status](https://travis-ci.com/cr13/RecetaCoctel.svg?branch=main)](https://travis-ci.com/cr13/RecetaCoctel)
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/cr13/recetacoctel)  [![Build Status](https://travis-ci.com/cr13/RecetaCoctel.svg?branch=main)](https://travis-ci.com/cr13/RecetaCoctel) ![CircleCI](https://img.shields.io/circleci/build/github/cr13/RecetaCoctel)
 
 
 
