@@ -113,7 +113,7 @@ Esto nos lleva a la ventana de edición del fichero yml.
 
 Podemos hacer dos cosas:
 - Editarlo y realizar el commit desde la interfaz gráfica 
-- Copiar el contenido del fichero y crear de manera manual en nuestro repositorio local el fichero .yml
+- Copiar el contenido del fichero y crearlo de manera manual en nuestro repositorio local el fichero .yml
 
 Una vez decidida una de las dos formas pasamos a modificar el código del [fichero.yml](https://github.com/cr13/RecetaCoctel/blob/main/.github/workflows/node.js.yml). 
 
@@ -161,7 +161,7 @@ Para finalizar se añade el badge en el Readme del repositorio
 
 ### CircleCI
 
-En esta alternativa vamos a seguir el consejo y vamos a usa contenedores para acelerar los tests.
+En esta alternativa siguiendo las buenas prácticas recomendadas en el temario vamos a utilizar contenedores para acelerar los tests.
 
 Lo primero que vamos a hacer es darnos de alta, nos da la posibilidad de registrarnos a través de Github o de Bitbucket. Como es lógico nosotros utilizamos Github.
 
