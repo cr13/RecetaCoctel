@@ -57,6 +57,7 @@ CGROUP
 CGROUPS
 CGroups
 CI
+ci
 CLI
 CMS
 CMSs
@@ -71,6 +72,7 @@ CentOS
 Chai
 Cinder
 Circle
+CircleCI
 ClasesDesarrolladas
 ClearDB
 Clojure
@@ -363,6 +365,7 @@ Setting
 Sharing
 Shippable
 Should
+skip
 Skype
 SliTaz
 Small
@@ -546,6 +549,7 @@ colocarles
 colorines
 com
 commit
+commits
 common
 communication
 compartimentalización
