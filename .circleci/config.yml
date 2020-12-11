@@ -11,7 +11,8 @@ jobs:
     
     steps:
       - checkout
-      - run: docker run -t -v `pwd`:/app/test cr13/recetascoctel
+      - run: npm install grunt-cli
+      - run: grunt test
 
 
   # test:
