@@ -149,7 +149,7 @@ A continuación se muestra el resultado
 Para finalizar se añade el badge en el Readme del repositorio
 
 ```bash
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/cr13/RecetaCoctel/Node.js%20CI)
+[![Node JS CI Status](https://github.com/cr13/RecetaCoctel/workflows/Node.js%20CI/badge.svg)](https://github.com/cr13/RecetaCoctel/actions)
 ```
 
 **Referencias seguidas:**
@@ -191,7 +191,7 @@ Si pulsamos en las letras verdes test (en caso de error estaría en rojo), acced
 Para finalizar se va añadir el badge de circleCI al repositorio con la siguiente linea.
 
 ```bash
-![CircleCI](https://img.shields.io/circleci/build/github/cr13/RecetaCoctel)
+[![CircleCI Status](https://circleci.com/gh/cr13/RecetaCoctel.svg?style=shield)](https://app.circleci.com/pipelines/github/cr13/RecetaCoctel?branch=main)
 ```
 
 **Referencias seguidas:**
@@ -201,3 +201,5 @@ Para finalizar se va añadir el badge de circleCI al repositorio con la siguient
 
 
 Para generar los badge se ha utilizado la siguiente [web](https://shields.io/).
+
+
