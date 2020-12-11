@@ -49,7 +49,7 @@ Al ejecutar la tarea de test se utiliza el comando *npm test*, el motivo ha sido
 
 Por otro lado, se ha añadido un [fichero](https://github.com/cr13/RecetaCoctel/blob/main/.jshintrc) de configuración las opciones para el plugin *jshint*, para indicar la versión de javascript, con el objetivo de evitar los warnings ('const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).)
 
-Ejecución de las tareas:
+### Descripción de las tareas de ejecución:
 
 ```bash
     # Instala las dependencias necesarias indicadas en el package.json.
@@ -62,8 +62,24 @@ Ejecución de las tareas:
     grunt     
 ```
 
+## Instrucciones de Uso
 
-Referencias consultadas:
+```bash
+
+    # Instala gestor grunt.
+    npm i -D grunt-cli
+
+    # Instala las dependencias necesarias.
+    grunt install   
+
+    # Ejecuta tarea por defecto, en mi caso ejecuta los test y el plugin para comprobar sintaxis.
+    grunt           
+
+```
+---
+
+### Referencias consultadas:
+
 - [ionos.es gulp vs grunt](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/gulp-vs-grunt-que-diferencia-a-estos-task-runners/)
 
 - [blog grunt vs gulp + ejemplos](https://blog.koalite.com/2015/06/grunt-o-gulp-que-uso/)

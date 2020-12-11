@@ -102,6 +102,19 @@ USER cr13
 CMD ["grunt","test"]
 
 ```
+
+### Instrucciones de uso
+
+```bash
+
+#Se construye la imagen v
+docker build -t cr13/recetascoctel .
+
+#Para ejecutarlo
+docker run -t -v `pwd`:/app/test cr13/recetascoctel
+
+---
+
 ### Ref seguidas
 
 - [Buenas prácticas construyendo imágenes Docker](https://medium.com/@serrodcal/buenas-pr%C3%A1cticas-construyendo-im%C3%A1genes-docker-8a4f14f7ad1d)
