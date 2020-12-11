@@ -1,5 +1,6 @@
 language: node_js
-
+notifications:
+  email: false
 node_js:
   - node 
   - lts/*
@@ -10,6 +11,6 @@ before_install:
   - npm install grunt-cli
 
 install:
-  - grunt install
+  - grunt ci
 
 script: grunt test
