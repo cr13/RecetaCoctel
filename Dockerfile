@@ -19,7 +19,7 @@ RUN apk add --no-cache nodejs npm \
     && npm install -g grunt-cli \
     && addgroup -g 1000 node \
     && adduser -u 1005 -G node -s /bin/sh -D cr13 \ 
-    && mkdir -p /app/node_modules && 
+    && mkdir -p /app/node_modules
 
 #Se selecciona el usuario a utilizar
 USER cr13
