@@ -8,7 +8,13 @@ title: CI
 
 # Sistemas de integración continua
 
-Para llevar a cabo la integración continua de mi proyecto, se va a probar [**Travis-ci**](https://travis-ci.com/) justificación de uso [aquí](./ci.html#travisci), github [action CI](./ci.html#actionsci) y  [**CircleCI**](https://circleci.com/) justificación de uso [aquí](./ci.html#circleci). 
+Para llevar a cabo la integración continua de mi proyecto, se va a probar:
+
+1. [Travis-ci](https://travis-ci.com/) donde se van a testear en las versiones más recientes de NodeJS, justificación de uso [aquí](./ci.html#travisci)
+
+2. GitHub Actions CI donde se probaran dos versiones antiguas de NodeJS, ver justificación [aquí](./ci.html#actionsci)
+
+3. [**CircleCI**](https://circleci.com/) donde utilizaremos un contenedor docker para realizar los test, justificación de uso [aquí](./ci.html#circleci). 
 
 <a name="travisci"></a>
 
