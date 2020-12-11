@@ -18,10 +18,14 @@ RUN apk add --no-cache nodejs npm \
     && npm install \
     && npm install -g grunt-cli \
     && addgroup -g 1000 node \
-    && adduser -u 1005 -G node -s /bin/sh -D cr13 
+    && adduser -u 1005 -G node -s /bin/sh -D cr13 \ 
+    && mkdir -p /app/node_modules && 
 
 #Se selecciona el usuario a utilizar
 USER cr13
+
+# Registramos node_modules en el path para que localize las dependencias
+ENV PATH=/node_modules/.bin:$PATH
 
 # Ejecuta grunt para los tests
 CMD ["grunt","test"]
