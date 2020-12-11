@@ -8,8 +8,8 @@ jobs:
       - checkout
       #Log into registry
       - run: echo "$DOCKERHUB_PASSWORD" | docker login --username $CIRCLE_USERNAME  --password-stdin
-      #Se construye la imagen 
-      - run: docker build -t cr13/recetascoctel .
+      #Se obtiene la imagen 
+      - run: docker push cr13/recetacoctel:tagname
 
   test:
     machine: true
