@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       #Log into registry
-      - run: echo "$DOCKERHUB_PASSWORD" | docker login --username $CIRCLE_USERNAME  --password-stdin
+      - run: echo "$DOCKERHUB_PASSWORD" | docker login --username $DOCKERHUB_USERNAME  --password-stdin
       #Se construye la imagen 
       - run: docker build -t cr13/recetascoctel .
 
