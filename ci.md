@@ -165,7 +165,7 @@ En esta alternativa siguiendo las buenas prácticas recomendadas en el temario v
 
 Lo primero que vamos a hacer es darnos de alta, nos da la posibilidad de registrarnos a través de Github o de Bitbucket. Como es lógico nosotros utilizamos Github.
 
-Una vez que damos permiso a acceder a nuestros repositorios de Github nos aparece un listado con nuestros repositorios para activar el que queramos. en nuestro caso RecetaCoctel.
+Una vez que damos permiso para acceder a nuestros repositorios de Github nos aparece un listado con nuestros repositorios para activar el que queramos. en nuestro caso RecetaCoctel.
 
 ![proyecto github en circleci](./img/repos_github_circleci.png)
 
