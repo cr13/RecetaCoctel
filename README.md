@@ -5,69 +5,15 @@ Proyecto para la asignatura de Cloud Computing I
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/cr13/recetacoctel)  [![Travis Status](https://travis-ci.com/cr13/RecetaCoctel.svg?branch=main)](https://travis-ci.com/cr13/RecetaCoctel) 
 [![Node JS CI Status](https://github.com/cr13/RecetaCoctel/workflows/Node.js%20CI/badge.svg)](https://github.com/cr13/RecetaCoctel/actions)  [![CircleCI Status](https://circleci.com/gh/cr13/RecetaCoctel.svg?style=shield)](https://app.circleci.com/pipelines/github/cr13/RecetaCoctel?branch=main)
 
+## Justificación técnica del framework elegido para el microservicio.
 
+## Diseño en general del API.
 
-## [Descripción del problema](./doc/desc_prob.md)
+## Uso de buenas prácticas: configuración distribuida, logs.
 
-## Arquitectura
+## Diseño de los test.
 
-Para la resolución del problema descrito anteriormente, se va optar por utilizar una arquitectura de microservicios, el motivo de su elección ha sido porque *se necesita que la aplicación sea accesible para un gran número de usuarios, por lo tanto esta arquitectura es la mejor para resolver grandes volúmenes de peticiones*, además de los beneficios que nos aporta dicha arquitectura, tales como:
-- Modularidad: Permite dividir el proyecto en varios microservicios, en el caso de fallo de alguno de ellos no afectaría al resto.
-- Versatilidad: podemos usar diferentes lenguajes de programación
-- Escalabilidad, ya que se podrían desarrollar e incorporar más microservicios sin que afecte a los existentes
-- Facilita el mantenimiento de cada uno de ellos por separado.
-- Reutilización de funcionalidades típicas que ya hayan sido desarrolladas.
-
-## Lenguaje
-
-Este proyecto se va a realizar en NodeJS, utilizando el framework node express. El motivo de su elección se ha dado tras valorar otras opciones como escala, Go o python, visto que los demás compañeros han optado por estas opciones según comentaron en clase, he decido hacer algo diferente y por eso la elección de NodeJS.
-
-<a name="ClasesDesarrolladas"></a>
-
-## Clases desarrolladas
-
-**Hasta el momento se han desarrollado las siguientes clases**
-
-- [**Receta**](https://github.com/cr13/RecetaCoctel/blob/main/src/Receta.js)
-- [**ControllerReceta**](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerReceta.js)
-- [**Ingrediente**](https://github.com/cr13/RecetaCoctel/blob/main/src/Ingrediente.js)
-- [**ControllerIngrediente**](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerIngrediente.js)
-- [**ValoracionReceta**](https://github.com/cr13/RecetaCoctel/blob/main/src/ValoracionReceta.js)
-- [**ControllerValoracion**](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerValoracion.js)
-- [**ControllerRanking**](https://github.com/cr13/RecetaCoctel/blob/main/src/ControllerRanking.js)
-
-![Verificación de las clases](https://github.com/cr13/RecetaCoctel/blob/main/doc/img/h1/verificacionclases.png)
-
-## Planificación del proyecto (ROADMAP)
-
-La planificación provisional hasta el momento se puede ver [aquí.](https://cr13.github.io/RecetaCoctel/Roadmap.html)
-
-## Historias de usuario
-
-Las historias de usuario definidas hasta el momento se puede ver [aquí.](https://cr13.github.io/RecetaCoctel/hu.html)
-
-## Elección y justificación de biblioteca de aserciones y sistema de pruebas.
-
-Se ha seleccionado **Jest** para saber más [aquí.](https://cr13.github.io/RecetaCoctel/aserciones_sis_pruebas.html)
-
-## Gestor de tareas 
-
-El gestor de tareas elegido ha sido **grunt**, ver justificación [aquí](https://cr13.github.io/RecetaCoctel/aserciones_sis_pruebas.html#item3)
-
-## Instrucciones 
-
-```bash
-
-    # Instala gestor grunt.
-    npm i -D grunt-cli
-
-    # Instala las dependencias necesarias.
-    grunt install        
-
-    # Ejecuta tarea por defecto, en mi caso ejecuta los test y el plugin para comprobar sintaxis.
-    grunt           
-
-```
+## Otros trabajos.
 
 ## Avance del proyecto
 
@@ -77,41 +23,17 @@ Se han definido todas las clases necesarias para obtener un PMV, así como tambi
 
 Para las [clases](https://github.com/cr13/RecetaCoctel#ClasesDesarrolladas) desarrolladas, se han realizado algunos [test](https://github.com/cr13/RecetaCoctel/tree/main/src/test) de las más importantes, que son: [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/receta.test.js), [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/ingredientes.test.js), las clases controladoras [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_receta.test.js) y de [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_ingrediente.test.js).
 
-## Elección correcta, justificada del contenedor base y Dockerfile desarrollado
+### Documentación
 
-La elección de la imagen base a sido **alpine**, ver justificación, pruebas realizadas y fichero [Dockerfile](https://github.com/cr13/RecetaCoctel/blob/main/Dockerfile) resultante [aquí](https://cr13.github.io/RecetaCoctel/contenedor.html)
-
-### Instrucciones de construcción y ejecución
-
-```bash
-
-#Se construye la imagen 
-docker build -t cr13/recetascoctel .
-
-#Para ejecutarlo
-docker run -t -v `pwd`:/app/test cr13/recetascoctel
-
-```
-
-## Subida a Docker Hub
-
-Para poder utilizar Docker Hub, lo primero que hay que hacer es registrarse, una vez registrados hay que ir a Account Setting --> Linked Accounts y asociar nuestra cuenta de GitHub. Una vez hecho esto solo hay que crear el repositorio. En el siguiente captura se muestra la configuración de creación de mi repositorio ![Ejemplo creación](./doc/img/h3/createRepositorydockerhub.png)
-
-A continuación dejo mi [Repositorio DockerHub](https://hub.docker.com/repository/docker/cr13/recetacoctel).
-
-## Uso de GitHub Container Registry
-
-La justificación de uso se puede ver [aquí](https://cr13.github.io/RecetaCoctel/githubcontainerregistry.html)
-
-## Sistemas de Integración Continua
-
-Para llevar a cabo la integración continua de mi proyecto, se va a probar:
-
-1. [Travis-ci](https://travis-ci.com/) donde se van a testear en las versiones más recientes de NodeJS, justificación de uso [aquí](https://cr13.github.io/RecetaCoctel/ci.html#travisci)
-
-2. GitHub Actions CI donde se probaran dos versiones antiguas de NodeJS, ver justificación [aquí](https://cr13.github.io/RecetaCoctel/ci.html#actionsci)
-
-3. [CircleCI](https://circleci.com/) donde utilizaremos un contenedor docker para realizar los test, justificación de uso [aquí](https://cr13.github.io/RecetaCoctel/ci.html#circleci). 
-
-
-Dato a tener en cuenta, si no queremos que se ejecuten los sistemas, podemos usa [skip ci] en los commits.
+1. [Configuración del repositorio.](./doc/doc_H0.md)
+2. [Descripción del problema](./doc/desc_prob.md)
+3. [Definición de la arquitectura elegida.](https://cr13.github.io/RecetaCoctel/)
+4. [Planificación del proyecto (ROADMAP)](https://cr13.github.io/RecetaCoctel/Roadmap.html)
+5. [Historias de usuario](https://cr13.github.io/RecetaCoctel/hu.html)
+6. [Clases desarrolladas.](https://cr13.github.io/RecetaCoctel/clases_desarrolladas.html)
+7. [Elección y justificación de biblioteca de aserciones y sistema de pruebas.](https://cr13.github.io/RecetaCoctel/aserciones_sis_pruebas.html)
+8. [Gestor de tareas](https://cr13.github.io/RecetaCoctel/aserciones_sis_pruebas.html#item3)
+9. [Elección correcta, justificada del contenedor base y Dockerfile desarrollado](https://cr13.github.io/RecetaCoctel/contenedor.html)
+10. [Subida a Docker Hub](https://cr13.github.io/RecetaCoctel/docker_hub.html)
+11. [Uso de GitHub Container Registry](https://cr13.github.io/RecetaCoctel/githubcontainerregistry.html)
+12. [Sistemas de Integración Continua](https://cr13.github.io/RecetaCoctel/ci.html)
