@@ -45,3 +45,18 @@ router.post('/recetas/', (req, res) => {
     }
 });
 
+router.delete('/recetas/:id_receta', (req, res) => {
+    body = req.body;
+
+    try {
+        controllerRecetas.delReceta(body.id_receta);
+        res.status(200);
+        res.send({
+            message: "Receta eliminada correctamente",
+        });
+    } catch (error) {
+        res.status(409);
+        res.header("Content-Type", "application/json");
+        res.json({ Error: error });
+    }
+});
