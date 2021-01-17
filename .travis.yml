@@ -10,7 +10,6 @@ node_js:
 before_install:
   - npm install grunt-cli
 
-install:
-  - grunt install
+install: grunt install
 
 script: grunt test
