@@ -13,6 +13,18 @@ const ingrediente_cuatro = new ingrediente(4, "Hierba buena", "2-4 hojas", "Flor
 const receta_uno = new receta(1, "Mojito", "Tritura las hojas de menta con el azúcar y el zumo de lima. Agrega un chorrito de agua con gas y llena el vaso con hielo picado. Vierta el ron y cubra con agua con gas. Decore y sirva con pajita.",10, "Fácil", 5, [ingrediente_uno, ingrediente_dos, ingrediente_tres]);
 const receta_dos = new receta(2, "Daikiri", "Tritura las hojas de menta con el azúcar y el zumo de lima. Agrega un chorrito de agua con gas y llena el vaso con hielo picado. Vierta el ron y cubra con agua con gas. Decore y sirva con pajita.",10, "Fácil", 5, [ingrediente_uno, ingrediente_dos, ingrediente_tres, ingrediente_cuatro]);
 
+describe("Función para añadir una receta", () => {
+    test('debe añadir un receta y comprobamos que efectivamente el diccionario contiene un elemento', () => {
+
+        expect.assertions(listRecetas);
+        listRecetas.addReceta(receta_uno);
+        expect.hasAssertions();
+        expect(Object.keys(listRecetas.getRecetas()).length).toEqual(1);
+
+
+    });
+});
+
 
 
 describe("Función para obtener una receta por titulo", () => {
