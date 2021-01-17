@@ -3,10 +3,10 @@ layout: default
 title: CI
 ---
 
-###### [Inicio](./) | [Roadmap](./Roadmap.html) | [HU](./hu.html) | [Tools Test](./aserciones_sis_pruebas.html) | [Contenedor](./contenedor.html) | [GitHubContainerRegistry](./githubcontainerregistry.html) | [CI](./ci.html)
+###### [Inicio](./) | [Roadmap](./Roadmap.html) | [HU](./hu.html) | [Clases](./clases_desarrolladas) | [Tools Test](./aserciones_sis_pruebas.html) | [Contenedor](./contenedor.html) | [Docker Hub](./docker_hub.html) | [GitHubContainerRegistry](./githubcontainerregistry.html) | [CI](./ci.html) | (Framework API)[./
 
 
-# Sistemas de integración continua
+## Sistemas de integración continua
 
 Para llevar a cabo la integración continua de mi proyecto, se va a probar:
 
@@ -15,6 +15,8 @@ Para llevar a cabo la integración continua de mi proyecto, se va a probar:
 2. GitHub Actions CI donde se probaran dos versiones antiguas de NodeJS, ver justificación [aquí](./ci.html#actionsci)
 
 3. [**CircleCI**](https://circleci.com/) donde utilizaremos un contenedor docker para realizar los test, justificación de uso [aquí](./ci.html#circleci). 
+
+Dato a tener en cuenta, si no queremos que se ejecuten los sistemas, podemos usa [skip ci] en los commits.
 
 <a name="travisci"></a>
 
