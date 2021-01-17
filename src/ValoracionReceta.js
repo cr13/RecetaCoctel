@@ -18,6 +18,14 @@ class ValoracionReceta {
     checkType(user, id_receta, valoracion) {
         return ((typeof id_receta === 'number') && (typeof user === 'number') && (typeof valoracion === 'number') );                    
     }
+
+    get_userid(){
+        return this.user_id;
+    }
+
+    get_idreceta(){
+        return this.id_receta;
+    }
 }
 
 module.exports = ValoracionReceta;
