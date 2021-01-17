@@ -34,8 +34,14 @@ class ControllerReceta {
     }
 
     delReceta(receta) {
-        let pos_receta = this.recetas.indexOf(receta);
-        this.recetas.splice(pos_receta, 1);
+        let id_receta = receta.get_id();
+        if (id_receta in this.recetas) {
+            delete this.recetas[id_receta];
+        }
+        else {         
+            throw new Exception("Info", "La receta no existe en el sistema");
+        }
+        
     }
     
     getRecetaByTitle(til) {
