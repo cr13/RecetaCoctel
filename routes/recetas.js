@@ -15,5 +15,17 @@ router.get("/recetas", (req, res) => {
     res.json(data);
 });
 
+router.get("/recetas/:title", (req, res) => {
+    try {
+        let data = controllerRecetas.getRecetaByTitle(req.params.title);
+        res.status(200);
+        res.header("Content-Type", "application/json");
+        res.json(data);
+    } catch (exception) {
+        res.status(404);
+        res.header("Content-Type", "application/json");
+        res.json({ Error: exception });
+    }
+});
 
 module.exports = router;
