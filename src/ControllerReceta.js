@@ -38,15 +38,15 @@ class ControllerReceta {
         this.recetas.splice(pos_receta, 1);
     }
     
-    getRecetaByTitle(recetas, title) {
-        let result = [];
-        for (let index = 0; index < recetas.length; index++) {
-            let til = recetas[index].titulo;
-            if (til.toLowerCase().indexOf(title.toLowerCase()) > -1) {
-                result.push(recetas[index]);
-            }
+    getRecetaByTitle(title) {
+
+        let recetasencontradas = Object.keys(this.recetas).find(
+            (id_receta) => this.recetas[id_receta].get_title() === title
+        );
+        if (recetasencontradas == undefined) {
+            throw new Excepcion("Info","La receta no existe en el sistema.");
         }
-        return result;
+        return this.recetas[recetasencontradas];  
     }
 
 }
