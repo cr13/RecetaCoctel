@@ -7,6 +7,8 @@ Proyecto para la asignatura de Cloud Computing I
 
 ## Justificación técnica del framework elegido para el microservicio.
 
+El framework elegido a sido express se pude ver justificación [aquí](https://cr13.github.io/RecetaCoctel/frameworks.html).
+
 ## Diseño en general del API.
 
 ## Uso de buenas prácticas: configuración distribuida, logs.
@@ -17,11 +19,32 @@ Proyecto para la asignatura de Cloud Computing I
 
 ## Avance del proyecto
 
-Se han definido las issues como desarrollador, para ello, se ha reorganizado la asociación de cada clase con su issue correspondiente, además se han asociado las funciones que corresponde a cada HU por separado (evitando asociar múltiples HU a un solo commit). También se ha especificado la descripción de las entidades del proyecto en cada HU correspondiente.
+- Lo primero que se ha realizado ha sido añadir el control de tipos en los parámetros de las clases.
+    - [5d14a28](https://github.com/cr13/RecetaCoctel/commit/5d14a28aa9c2263447b1a82cca6b84b5cf447cf9)
+    - [f51a60f](https://github.com/cr13/RecetaCoctel/commit/f51a60ffe13dc51fc5f6d48740338dd2abd6a611)
+    - [b730205](https://github.com/cr13/RecetaCoctel/commit/f51a60ffe13dc51fc5f6d48740338dd2abd6a611)
+- Se ha cambiado la forma de almacenamiento en las clases controladoras cambiando los arrays por diccionarios para mejorar la eficiencia de accesos a los datos.
+    - [4fd7672](https://github.com/cr13/RecetaCoctel/commit/4fd76723d8bc75f94d135fc44a358d5cae57c417)
+- Debido a la mejora anterior se han tenido que modificar los métodos relacionados.
+    - [Consultar](https://github.com/cr13/RecetaCoctel/issues/5) receta.
+    - [Añadir](https://github.com/cr13/RecetaCoctel/issues/6)
+    - [Eliminar](https://github.com/cr13/RecetaCoctel/issues/8)
+- Además se han tenido que corregir todos los test.
+    Receta
+    - [2215d1f](https://github.com/cr13/RecetaCoctel/commit/2215d1f1a5cd41bb5825e012fb20ca145383b162)
+    Clase controladora de receta
+    - Añadir una receta[8488955](https://github.com/cr13/RecetaCoctel/commit/8488955afc22ceb0efe83a11b6be3a64d9fdb2d9)
+    - Búsqueda por titulo [9cc9036](https://github.com/cr13/RecetaCoctel/commit/9cc9036ed153fc032520e32a709f87c241ea9471)
+    Ingredientes
+    - [2215d1f ](https://github.com/cr13/RecetaCoctel/commit/8af3cd95097fbeabca1ba40becba7b512bb76bf4#diff-944456afa8b87a27520cc9bb37b45391c6c68777cbd9f48e3dd062a32dcd7490)
+    Clase controladora de ingredientes
+    - [98efc94 ](https://github.com/cr13/RecetaCoctel/commit/98efc9427a050e118167b255ea6dc494b9107006)
+    
+- Se ha actualizado el [fichero](https://github.com/cr13/RecetaCoctel/commit/c8a2305dbd193556e6391ffd36aa76fa3ae425c8) de Travis para quitar las versiones innecesarias y dejar solo las importantes, de esta forma se consumen menos créditos Travis.
+- Se han eliminado los comentarios del fichero [Dockerfile](https://github.com/cr13/RecetaCoctel/issues/31).
+- Se ha añadido una clase para las [Excepciones](https://github.com/cr13/RecetaCoctel/issues/29)
 
-Se han definido todas las clases necesarias para obtener un PMV, así como también se ha modificado el roadmap llamando de forma más significativa a las fases que en un principio asigne a cada PMV.
 
-Para las [clases](https://github.com/cr13/RecetaCoctel#ClasesDesarrolladas) desarrolladas, se han realizado algunos [test](https://github.com/cr13/RecetaCoctel/tree/main/src/test) de las más importantes, que son: [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/receta.test.js), [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/ingredientes.test.js), las clases controladoras [receta](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_receta.test.js) y de [ingrediente](https://github.com/cr13/RecetaCoctel/blob/main/src/test/controller_ingrediente.test.js).
 
 ### Documentación
 
