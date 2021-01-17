@@ -6,12 +6,18 @@ entidad:
   - src/ControllerReceta.js
   - src/ControllerIngrediente.js
   - src/ValoracionReceta.js
-  - src/ControllerValoracion.js
+  - src/Exception.js
   - src/ControllerRanking.js
   
 test:
   - src/test/receta.test.js 
   - src/test/ingredientes.test.js
+  - src/test/api_recetas.test.js
+  - src/test/controller_ingrediente.test.js
+  - src/test/controller_receta.test.js
 
 fichero_tareas:
   - Gruntfile.js
+
+make: 
+  - grunt
