@@ -33,11 +33,15 @@ class ControllerReceta {
     }
 
     delReceta(receta) {
-        let id_receta = receta.get_id();
+        let id_receta = receta;
+        if (typeof receta != 'string'){
+
+            id_receta = receta.get_id();
+        }        
         if (id_receta in this.recetas) {
             delete this.recetas[id_receta];
         }
-        else {         
+        else {   
             throw new Exception("Info", "La receta no existe en el sistema");
         }
         
