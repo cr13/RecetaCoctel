@@ -11,7 +11,6 @@ class Excepcion {
         }
     }
 
-    //Función para comprobar el tipo de datos recibidos
     checkType(tipo, msg) {
         return ((typeof tipo === 'string') && (typeof msg === 'string'));
     }
