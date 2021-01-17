@@ -1,1 +1,3 @@
-theme: jekyll-theme-merlot
+title: Merlot theme Copy for Recetas
+description: Merlot is a theme for GitHub Pages.
+theme: site.theme
