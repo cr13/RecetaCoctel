@@ -16,7 +16,7 @@ class ControllerReceta {
     addReceta(receta) {
         if (receta instanceof Receta) {
             if (!(receta.get_id() in this.recetas)) {
-                this.receta[receta.get_id()] = receta;
+                this.recetas[receta.get_id()] = receta;
             }
             else {
                 throw new Excepcion ("Error", "El id de receta ya existe");
@@ -25,7 +25,6 @@ class ControllerReceta {
         else {
             throw new Excepcion("Error", "Los parámetros insertados no coinciden con los tipos requeridos");
         }
-        this.recetas.push(receta);
     }
 
     changeReceta(receta, receta_new) {
