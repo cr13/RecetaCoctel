@@ -10,6 +10,9 @@ let controllerRecetas = new ControllerReceta();
 
 router.get("/recetas", (req, res) => {
     let data = controllerRecetas.getRecetas();
+    if (Object.keys(data).length === 0){
+        data = "No existe ninguna receta en estos momentos"
+    }
     res.status(200);
     res.header("Content-Type", "application/json");
     res.json(data);
@@ -29,7 +32,7 @@ router.get("/recetas/:title", (req, res) => {
 });
 
 
-router.post('/recetas/', (req, res) => {
+router.post('/recetas/add', (req, res) => {
     body = req.body;
     try {
         receta_new = new Receta(body.id_receta, body.titulo, body.instrucciones, body.duracion, body.dificultad, body.comensales, body.ingredientes);
@@ -45,18 +48,18 @@ router.post('/recetas/', (req, res) => {
     }
 });
 
-router.delete('/recetas/:id_receta', (req, res) => {
-    body = req.body;
-
+router.delete('/recetas/del/:id_receta', (req, res) => {
     try {
-        controllerRecetas.delReceta(body.id_receta);
+        controllerRecetas.delReceta(req.params.id_receta);
         res.status(200);
         res.send({
             message: "Receta eliminada correctamente",
         });
     } catch (error) {
-        res.status(409);
+        res.status(404);
         res.header("Content-Type", "application/json");
         res.json({ Error: error });
     }
 });
+
+module.exports = router;
