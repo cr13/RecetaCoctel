@@ -49,3 +49,18 @@ describe("Test para obtener Recetas", () => {
     });
 });
 
+describe("Test para eliminar receta", function () {
+    it("Eliminar una receta dando su id", function (done) {
+        request(app)
+            .delete("/recetas/del/1")
+            .expect("Content-Type", /json/)
+            .expect(200, done);
+    });
+    it("La receta a eliminar no existe", function (done) {
+        request(app)
+            .delete("/recetas/del/1")
+            .expect("Content-Type", /json/)
+            .expect(404, done);
+    });
+});
+
