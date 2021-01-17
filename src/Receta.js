@@ -21,7 +21,7 @@ class Receta {
 	//Función para comprobar el tipo de datos recibidos
 	checkType(id_receta, titulo, instrucciones, duracion, dificultad, comensales, ingredientes) {
 		let succesful = false;
-		if ((typeof id_receta === 'number') && (typeof titulo === 'string') && (typeof comensales === 'number') && (typeof instrucciones === 'string') && (typeof duracion === 'number') && (typeof dificultad === 'number') && (Array.isArray(ingredientes))){
+		if ((typeof id_receta === 'number') && (typeof titulo === 'string') && (typeof comensales === 'number') && (typeof instrucciones === 'string') && (typeof duracion === 'number') && (typeof dificultad === 'string') && (Array.isArray(ingredientes))){
 			succesful= true;
 		} else { succesful = false;}
 
