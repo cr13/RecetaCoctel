@@ -3,7 +3,7 @@
 
 class Ingrediente {
 	constructor(id_ing, nombre, descripcion, tipo, recetas) {
-		if (this.checkType(id_ing, nombre, descripcion, tipo, recetas)){
+		if (this.checkType(id_ing, nombre, descripcion, tipo)){
 			this.id_ing = id_ing;
 			this.nombre = nombre;
 			this.descripcion = descripcion;
@@ -16,8 +16,8 @@ class Ingrediente {
 	}
 
 	//Función para comprobar el tipo de datos recibidos
-	checkType(id_ing, nombre, descripcion, tipo, recetas) {
-		return ((typeof id_ing === 'number') && (typeof nombre === 'string') && (typeof descripcion === 'string') && (typeof tipo === 'string') && (Array.isArray(recetas)));				
+	checkType(id_ing, nombre, descripcion, tipo) {
+		return ((typeof id_ing === 'number') && (typeof nombre === 'string') && (typeof descripcion === 'string') && (typeof tipo === 'string')));				
 	}
 
 	get_id(){
