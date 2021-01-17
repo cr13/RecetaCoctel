@@ -25,7 +25,20 @@ describe("Función para añadir una receta", () => {
     });
 });
 
+describe("Función para eliminar una receta", () => {
+    test('debe añadir otra receta y se elimanará la receta insertada en el test anterior', () => {
 
+        expect.assertions(listRecetas);
+        listRecetas.addReceta(receta_dos);
+        expect(Object.keys(listRecetas.getRecetas()).length).toEqual(2);
+
+        listRecetas.delReceta(receta_uno);
+
+        expect(Object.keys(listRecetas.getRecetas()).length).toEqual(1);
+
+
+    });
+});
 
 describe("Función para obtener una receta por titulo", () => {
     test('se va volver añadir la receta borrada en el test anterior y se va a buscar la receta Mojito', () => {
