@@ -28,6 +28,14 @@ class Receta {
 		return succesful
 	}
 
+	get_id(){
+		return this.id_receta;
+	}
+
+	get_title() {
+		return this.titulo;
+	}
+
 	// Función que devuelve una receta como diccionario
 	get_dict_receta() {
 		return { "id_receta": this.id_receta, "titulo": this.titulo, "instrucciones": this.instrucciones, "duracion": this.duracion, "dificultad":this.dificultad, "comensales":this.comensales, "ingredientes": this.ingredientes };
