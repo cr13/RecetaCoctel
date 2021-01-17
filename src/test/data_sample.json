@@ -1,0 +1,35 @@
+{ "recetas":[
+    {
+        "comensales": 5,
+        "dificultad": "Fácil",
+        "duracion": 10,
+        "id_receta": 1,
+        "ingredientes": [
+            {
+                "descripcion": "100ml",
+                "id_ing": 1,
+                "nombre": "Ron Blanco",
+                "recetas": null,
+                "tipo": "bebida"
+            },
+            {
+                "descripcion": "200ml",
+                "id_ing": 2,
+                "nombre": "Seven UP",
+                "recetas": null,
+                "tipo": "bebida"
+            },
+            {
+                "descripcion": "1 o 2 cucharadas",
+                "id_ing": 3,
+                "nombre": "Azucar Morena",
+                "recetas": null,
+                "tipo": "Hidratos de carbono"
+            }
+        ],
+        "instrucciones": "Tritura las hojas de menta con el azúcar y el zumo de lima. Agrega un chorrito de agua con gas y llena el vaso con hielo picado. Vierta el ron y cubra con agua con gas. Decore y sirva con pajita.",
+        "titulo": "Mojito"
+    }
+
+]
+}
