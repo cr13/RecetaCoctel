@@ -28,4 +28,20 @@ router.get("/recetas/:title", (req, res) => {
     }
 });
 
-module.exports = router;
+
+router.post('/recetas/', (req, res) => {
+    body = req.body;
+    try {
+        receta_new = new Receta(body.id_receta, body.titulo, body.instrucciones, body.duracion, body.dificultad, body.comensales, body.ingredientes);
+        controllerRecetas.addReceta(receta_new);
+        res.status(201);
+        res.send({
+            message: "Receta insertada",
+        });
+    } catch (error) {
+            res.status(409);
+            res.header("Content-Type", "application/json");
+            res.json({ Error: error });
+    }
+});
+
