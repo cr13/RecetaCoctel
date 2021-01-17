@@ -20,6 +20,10 @@ class Ingrediente {
 		return ((typeof id_ing === 'number') && (typeof nombre === 'string') && (typeof descripcion === 'string') && (typeof tipo === 'string') && (Array.isArray(recetas)));				
 	}
 
+	get_id(){
+		return this.id_ing;
+	}
+
 	// Asignar ingrediente a receta
 	assign_receta(receta) {
 		this.recetas.push(receta);
