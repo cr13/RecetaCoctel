@@ -1,5 +1,5 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
 // const port = 3001
 const morgan = require('morgan');
 const dataRoutes = require('./routes/recetas');
