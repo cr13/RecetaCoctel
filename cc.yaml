@@ -16,8 +16,6 @@ test:
   - src/test/controller_ingrediente.test.js
   - src/test/controller_receta.test.js
 
-fichero_tareas:
-  - Gruntfile.js
+fichero_tareas: Gruntfile.js
 
-make: 
-  - grunt
+make: grunt
