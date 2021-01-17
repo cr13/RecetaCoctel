@@ -17,7 +17,7 @@ class Ingrediente {
 
 	//Función para comprobar el tipo de datos recibidos
 	checkType(id_ing, nombre, descripcion, tipo) {
-		return ((typeof id_ing === 'number') && (typeof nombre === 'string') && (typeof descripcion === 'string') && (typeof tipo === 'string')));				
+		return ((typeof id_ing === 'number') && (typeof nombre === 'string') && (typeof descripcion === 'string') && (typeof tipo === 'string'));				
 	}
 
 	get_id(){
