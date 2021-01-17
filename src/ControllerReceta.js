@@ -1,8 +1,12 @@
-var receta = require("./Receta");
+const Receta = require("./Receta");
+const Val_receta = require("./ValoracionReceta");
+const Excepcion = require("./Exception");
+
 
 class ControllerReceta {
     constructor() {
-        this.recetas = []; 
+        this.recetas = {}; 
+        this.valoraciones_recetas= {}
     }
 
     getRecetas() {
@@ -10,6 +14,17 @@ class ControllerReceta {
     }
 
     addReceta(receta) {
+        if (receta instanceof Receta) {
+            if (!(receta.get_id() in this.recetas)) {
+                this.receta[receta.get_id()] = receta;
+            }
+            else {
+                throw new Excepcion ("Error", "El id de receta ya existe");
+            }
+        }
+        else {
+            throw new Excepcion("Error", "Los parámetros insertados no coinciden con los tipos requeridos");
+        }
         this.recetas.push(receta);
     }
 
