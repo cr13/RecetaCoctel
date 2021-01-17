@@ -4,8 +4,8 @@ notifications:
 node_js:
   - node        # La versión actual más estable
   - lts/*       # La versión actual más estable con soporte a largo plazo
-  - "v15.0.1"   # Se especifica una versión en concreto, la 15.0.1
-  - "12"        # Se especifica una versión, que por defecto sería la versión 12 más actual estable lst 
+  #- "v15.0.1"   # Se especifica una versión en concreto, la 15.0.1
+  #- "12"        # Se especifica una versión, que por defecto sería la versión 12 más actual estable lst 
 
 before_install:
   - npm install grunt-cli
