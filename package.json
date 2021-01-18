@@ -1,6 +1,6 @@
 {
   "name": "RecetaCoctel",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Proyecto para la asignatura de Cloud Computing I",
   "main": "app.js",
   "directories": {
