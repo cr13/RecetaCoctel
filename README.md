@@ -7,15 +7,23 @@ Proyecto para la asignatura de Cloud Computing I
 
 ## Justificación técnica del framework elegido para el microservicio.
 
-El framework elegido a sido express se pude ver justificación [aquí](https://cr13.github.io/RecetaCoctel/frameworks.html).
+El framework elegido a sido express se pude ver justificación [aquí](https://cr13.github.io/RecetaCoctel/frameworkAPI.html).
 
 ## Diseño en general del API.
 
+El diseño desarrollado se describe [aquí](https://cr13.github.io/RecetaCoctel/diseñoAPI.html).
+
 ## Uso de buenas prácticas: configuración distribuida, logs.
+
+Buenas practicas implementadas [aquí](https://cr13.github.io/RecetaCoctel/bnpracticas.html).
 
 ## Diseño de los test.
 
+Desarrollo de los test [aquí](https://cr13.github.io/RecetaCoctel/diseñoTest.html).
+
 ## Otros trabajos.
+
+Se ha creado la imagen dockerfile de producción, se puede ver [aquí](./production.Dockerfile)
 
 ## Avance del proyecto
 
