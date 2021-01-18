@@ -33,14 +33,14 @@ describe("Test para obtener Recetas", () => {
                 .expect(200, done);
         });
 
-        it("Receta encontrada", function (done) {
+        it("Receta encontrada", (done) => {
             request(app)
                 .get("/recetas/Mojito")
                 .expect("Content-Type", /json/)
                 .expect(200, done);
         });
 
-        it("Receta no encontrada", function (done) {
+        it("Receta no encontrada", (done) =>  {
             request(app)
                 .get("/recetas/recetaprueba")
                 .expect("Content-Type", /json/)
@@ -50,13 +50,13 @@ describe("Test para obtener Recetas", () => {
 });
 
 describe("Test para eliminar receta",  () => {
-    it("Eliminar una receta dando su id", function (done) {
+    it("Eliminar una receta dando su id", (done) => {
         request(app)
             .delete("/recetas/del/1")
             .expect("Content-Type", /json/)
             .expect(200, done);
     });
-    it("La receta a eliminar no existe", function (done) {
+    it("La receta a eliminar no existe", (done) =>  {
         request(app)
             .delete("/recetas/del/1")
             .expect("Content-Type", /json/)
