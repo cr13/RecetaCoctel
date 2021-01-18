@@ -24,32 +24,32 @@ describe("Test para insertar Receta", () => {
     });
 });
 
-// describe("Test para obtener Recetas", () => {
-//     describe("GET", () => {
-//         // it("Debería devolver una lista con todas las recetas", (done) => {
-//         //     request(app)
-//         //         .get("/recetas")
-//         //         .expect("Content-Type", /json/)
-//         //         .expect(200, done);
-//         // });
+describe("Test para obtener Recetas", () => {
+    describe("GET", () => {
+        it("Debería devolver una lista con todos las recetas", (done) => {
+            request(app)
+                .get("/recetas")
+                .expect("Content-Type", /json/)
+                .expect(200, done);
+        });
 
-//         it("Receta encontrada", function (done) {
-//             request(app)
-//                 .get("/recetas/Mojito")
-//                 .expect("Content-Type", /json/)
-//                 .expect(200, done);
-//         });
+        it("Receta encontrada", function (done) {
+            request(app)
+                .get("/recetas/Mojito")
+                .expect("Content-Type", /json/)
+                .expect(200, done);
+        });
 
-//         it("Receta no encontrada", function (done) {
-//             request(app)
-//                 .get("/recetas/recetaprueba")
-//                 .expect("Content-Type", /json/)
-//                 .expect(404, done);
-//         });
-//     });
-// });
+        it("Receta no encontrada", function (done) {
+            request(app)
+                .get("/recetas/recetaprueba")
+                .expect("Content-Type", /json/)
+                .expect(404, done);
+        });
+    });
+});
 
-describe("Test para eliminar receta", function () {
+describe("Test para eliminar receta",  () => {
     it("Eliminar una receta dando su id", function (done) {
         request(app)
             .delete("/recetas/del/1")
