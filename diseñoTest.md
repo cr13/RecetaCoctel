@@ -26,6 +26,8 @@ Test Ingredientes
 Test Clase controladora de ingredientes
     - [98efc94 ](https://github.com/cr13/RecetaCoctel/commit/98efc9427a050e118167b255ea6dc494b9107006)
 
+<a name="testapi"></a>
+
 Además se ha creado un fichero de test nuevo para probar las rutas de la API. Este fichero de test esta creando siguiendo las historias de usuarios. Se puede ver [aquí](https://github.com/cr13/RecetaCoctel/blob/main/src/test/api_recetas.test.js).
 
 - [Test](https://github.com/cr13/RecetaCoctel/commit/13983100f7bad9e1059c1c05727ca79d613bfac9#diff-1cb874bc84f73e86571a31380a17bb4d34d62e3b505ac18dd693d563889a9f20) para obtener todas las recetas o una receta indicando el titulo.
