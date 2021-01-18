@@ -38,18 +38,25 @@ Se ha creado la imagen Docker para producción, se puede ver [aquí](./productio
     - [Añadir](https://github.com/cr13/RecetaCoctel/issues/6)
     - [Eliminar](https://github.com/cr13/RecetaCoctel/issues/8)
 - Además se han tenido que corregir todos los test.
+
     Receta
     - [2215d1f](https://github.com/cr13/RecetaCoctel/commit/2215d1f1a5cd41bb5825e012fb20ca145383b162)
+    
     Clase controladora de receta
-    - Añadir una receta[8488955](https://github.com/cr13/RecetaCoctel/commit/8488955afc22ceb0efe83a11b6be3a64d9fdb2d9)
-    - Búsqueda por titulo [9cc9036](https://github.com/cr13/RecetaCoctel/commit/9cc9036ed153fc032520e32a709f87c241ea9471)
+        - Añadir una receta[8488955](https://github.com/cr13/RecetaCoctel/commit/8488955afc22ceb0efe83a11b6be3a64d9fdb2d9)
+        - Búsqueda por titulo [9cc9036](https://github.com/cr13/RecetaCoctel/commit/9cc9036ed153fc032520e32a709f87c241ea9471)
+    
     Ingredientes
-    - [2215d1f ](https://github.com/cr13/RecetaCoctel/commit/8af3cd95097fbeabca1ba40becba7b512bb76bf4#diff-944456afa8b87a27520cc9bb37b45391c6c68777cbd9f48e3dd062a32dcd7490)
+        - [2215d1f ](https://github.com/cr13/RecetaCoctel/commit/8af3cd95097fbeabca1ba40becba7b512bb76bf4#diff-944456afa8b87a27520cc9bb37b45391c6c68777cbd9f48e3dd062a32dcd7490)
+
     Clase controladora de ingredientes
     - [98efc94 ](https://github.com/cr13/RecetaCoctel/commit/98efc9427a050e118167b255ea6dc494b9107006)
+
+    Test para probar las rutas
+    - Ver de forma desglosada [aquí](https://cr13.github.io/RecetaCoctel/diseñoTest.html#testapi)
     
 - Se ha actualizado el [fichero](https://github.com/cr13/RecetaCoctel/commit/c8a2305dbd193556e6391ffd36aa76fa3ae425c8) de Travis para quitar las versiones innecesarias y dejar solo las importantes, de esta forma se consumen menos créditos Travis.
-- Se han eliminado los comentarios del fichero [Dockerfile](https://github.com/cr13/RecetaCoctel/issues/31).
+- Se han eliminado los comentarios del fichero [Dockerfile](https://github.com/cr13/RecetaCoctel/issues/31)
 - Se ha añadido una clase para las [Excepciones](https://github.com/cr13/RecetaCoctel/issues/29)
 
 
