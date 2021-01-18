@@ -9,13 +9,20 @@ let controllerRecetas = new ControllerReceta();
 
 
 router.get("/recetas", (req, res) => {
-    let data = controllerRecetas.getRecetas();
-    if (Object.keys(data).length === 0){
-        data = "No existe ninguna receta en estos momentos"
+    try {
+        let data = controllerRecetas.getRecetas();
+        // if (Object.keys(data).length === 0){
+        //     data = "No existe ninguna receta en estos momentos"
+        // }
+        res.status(200);
+        res.header("Content-Type", "application/json");
+        res.json(data);
+    } catch (exception) {
+        res.status(404);
+        res.header("Content-Type", "application/json");
+        res.json({ Error: exception });
     }
-    res.status(200);
-    res.header("Content-Type", "application/json");
-    res.json(data);
+
 });
 
 router.get("/recetas/:title", (req, res) => {
