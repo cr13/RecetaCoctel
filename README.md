@@ -23,7 +23,7 @@ Desarrollo de los test [aquí](https://cr13.github.io/RecetaCoctel/diseñoTest.h
 
 ## Otros trabajos.
 
-Se ha creado la imagen dockerfile de producción, se puede ver [aquí](./production.Dockerfile)
+Se ha creado la imagen Docker para producción, se puede ver [aquí](./production.Dockerfile)
 
 ## Avance del proyecto
 
