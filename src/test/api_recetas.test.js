@@ -26,12 +26,12 @@ describe("Test para insertar Receta", () => {
 
 describe("Test para obtener Recetas", () => {
     describe("GET", () => {
-        it("Debería devolver una lista con todos las recetas", (done) => {
-            request(app)
-                .get("/recetas")
-                .expect("Content-Type", /json/)
-                .expect(200, done);
-        });
+        // it("Debería devolver una lista con todas las recetas", (done) => {
+        //     request(app)
+        //         .get("/recetas")
+        //         .expect("Content-Type", /json/)
+        //         .expect(200, done);
+        // });
 
         it("Receta encontrada", function (done) {
             request(app)
