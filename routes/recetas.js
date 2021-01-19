@@ -39,7 +39,7 @@ router.get("/recetas/:title", (req, res) => {
 });
 
 
-router.post('/recetas/add', (req, res) => {
+router.post('/recetas/', (req, res) => {
     body = req.body;
     try {
         receta_new = new Receta(body.id_receta, body.titulo, body.instrucciones, body.duracion, body.dificultad, body.comensales, body.ingredientes);
@@ -55,7 +55,7 @@ router.post('/recetas/add', (req, res) => {
     }
 });
 
-router.delete('/recetas/del/:id_receta', (req, res) => {
+router.delete('/recetas/:id_receta', (req, res) => {
     try {
         controllerRecetas.delReceta(req.params.id_receta);
         res.status(200);
