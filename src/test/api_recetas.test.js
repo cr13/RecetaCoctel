@@ -19,7 +19,7 @@ describe("Test para insertar Receta", () => {
             request(app)
                 .post("/recetas/")
                 .send(data.recetas[0])
-                .expect(409, done);
+                .expect(400, done);
         });
     });
 });
