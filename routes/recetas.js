@@ -49,7 +49,7 @@ router.post('/recetas/', (req, res) => {
             message: "Receta insertada",
         });
     } catch (error) {
-            res.status(409);
+            res.status(400);
             res.header("Content-Type", "application/json");
             res.json({ Error: error });
     }
