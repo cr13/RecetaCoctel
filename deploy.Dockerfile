@@ -17,10 +17,11 @@ RUN apk add --no-cache nodejs npm \
 
 USER cr13
 
-COPY --chown=cr13:node ["package*.json", "Gruntfile.js",".jshintrc", "./"]
+COPY --chown=cr13:node ["package*.json", "Gruntfile.js",".jshintrc", "app.js", "./"]
 
 COPY --chown=cr13:node ["src", "./src"]
 COPY --chown=cr13:node ["routes", "./routes"]
+
 
 RUN npm install grunt-cli && grunt install
 
