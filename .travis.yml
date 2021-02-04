@@ -9,7 +9,13 @@ node_js:
 
 before_install:
   - npm install grunt-cli
+  - docker-compose build
 
 install: grunt install
 
-script: grunt test
+before_script:
+  - docker-compose up -d
+
+script: 
+  - grunt test
+  - wget http://localhost:3013/recetas/ || exit 1
