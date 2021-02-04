@@ -28,4 +28,4 @@ ENV PATH=/node_modules/.bin:$PATH
 
 EXPOSE 3013
 
-CMD ["grunt","test"]
+CMD ["grunt","start"]
