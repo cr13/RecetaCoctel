@@ -13,6 +13,9 @@ module.exports = function (grunt) {
         },
 
         shell: {
+            npm_index: {
+                command: 'node app',
+            },
             npm_install: {
                 command: 'npm install',
             },
@@ -46,5 +49,7 @@ module.exports = function (grunt) {
     grunt.registerTask('test', ['shell:npm_test_jest']);
     //Tarea por defecto comprueba sintaxis
     grunt.registerTask('default', ["jshint"]);    
+    grunt.registerTask('start', ['shell:npm_index']);
+    
 
 };
