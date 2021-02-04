@@ -1,6 +1,7 @@
 
 # Dependency directories
 node_modules
+log
 
 # npm cache directory
 .npm
