@@ -4,16 +4,16 @@ const router = Router();
 const Receta = require("../src/Receta");
 const Ingrediente = require("../src/Ingrediente");
 const ControllerReceta = require("../src/ControllerReceta");
+const controllerIng = require("../src/ControllerIngrediente");
 
+let listIngredientes = new controllerIng();
 let controllerRecetas = new ControllerReceta();
 
 
 router.get("/recetas", (req, res) => {
     try {
         let data = controllerRecetas.getRecetas();
-        // if (Object.keys(data).length === 0){
-        //     data = "No existe ninguna receta en estos momentos"
-        // }
+
         res.status(200);
         res.header("Content-Type", "application/json");
         res.json(data);
@@ -42,7 +42,13 @@ router.get("/recetas/:title", (req, res) => {
 router.post('/recetas/', (req, res) => {
     body = req.body;
     try {
-        receta_new = new Receta(body.id_receta, body.titulo, body.instrucciones, body.duracion, body.dificultad, body.comensales, body.ingredientes);
+        body.ingredientes.forEach(element => {
+            // id_ing, nombre, descripcion, tipo, receta
+            let ingredientenew = new Ingrediente(element.id_ing, element.nombre, element.descripcion, element.tipo, element.recetas);
+            listIngredientes.addIngrediente(ingredientenew);
+        });
+
+        let receta_new = new Receta(body.id_receta, body.titulo, body.instrucciones, body.duracion, body.dificultad, body.comensales, listIngredientes.getIngs());
         controllerRecetas.addReceta(receta_new);
         res.status(201);
         res.send({
