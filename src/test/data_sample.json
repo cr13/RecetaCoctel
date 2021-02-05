@@ -1,7 +1,7 @@
 { "recetas":[
     {
         "comensales": 5,
-        "dificultad": "Fácil",
+        "dificultad": "FACIL",
         "duracion": 10,
         "id_receta": 1,
         "ingredientes": [
