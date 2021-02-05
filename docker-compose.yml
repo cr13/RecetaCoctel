@@ -28,3 +28,6 @@ services:
       - recetas_aux
     ports:
       - "8080:8080"
+
+volumes:
+  .:
