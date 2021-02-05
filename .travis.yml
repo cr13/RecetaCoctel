@@ -18,4 +18,4 @@ before_script:
 
 script: 
   - grunt test
-  - wget http://localhost:88/recetas/ || exit 1
+  - wget http://localhost:${HTTP_PORT}/recetas/ || exit 1
