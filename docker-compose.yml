@@ -27,4 +27,4 @@ services:
       - recetas
       - recetas_aux
     ports:
-      - "88:88"
+      - "88:80"
