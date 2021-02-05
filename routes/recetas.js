@@ -43,7 +43,6 @@ router.post('/recetas/', (req, res) => {
     body = req.body;
     try {
         body.ingredientes.forEach(element => {
-            // id_ing, nombre, descripcion, tipo, receta
             let ingredientenew = new Ingrediente(element.id_ing, element.nombre, element.descripcion, element.tipo, element.recetas);
             listIngredientes.addIngrediente(ingredientenew);
         });
