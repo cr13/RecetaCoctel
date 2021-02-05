@@ -18,6 +18,6 @@ before_script:
 
 script: 
   - grunt test
-  # - curl --location --request GET 'http://localhost:${HTTPPORT}/recetas/'
+  - curl --location --request GET 'http://localhost:${HTTPPORT}/recetas/'
   - wget http://localhost:${HTTP_PORT}/recetas/ || exit 1
   - wget http://localhost:${HTTP_PORT1}/recetas/ || exit 1
