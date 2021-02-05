@@ -1,3 +1,4 @@
+const Ingrediente = require("./Ingrediente");
 
 
 const tp_dificultad = Object.freeze({
@@ -32,10 +33,11 @@ class Receta {
 		if ((typeof id_receta === 'number') && (typeof titulo === 'string')
 		 && (typeof comensales === 'number') && (typeof instrucciones === 'string') 
 		 && (typeof duracion === 'number') && (typeof dificultad === 'string') 
-		 && (Array.isArray(ingredientes))){
+		 && (this.checkIngredientes(ingredientes))){
 			succesful= true;
+			
 		} else { succesful = false;}
-
+		console.log("chequeando receta nueva "+succesful);
 		return succesful
 	}
 
@@ -49,6 +51,20 @@ class Receta {
 			exito = false;
 		}
 		return exito;
+	}
+
+	checkIngredientes(ingredientes) {
+		if (Array.isArray(ingredientes)) {
+			let error = false;
+			ingredientes.forEach((ing) => (error = ing instanceof Ingrediente == false));
+			if (!error) {
+				return true;
+			} else {
+				throw "Error el ingrediente no existe";
+			}
+		} else {
+			throw "Error el campo ingrediente debe ser un array de ingredientes";
+		}
 	}
 
 	get_id(){
