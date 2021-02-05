@@ -1,4 +1,12 @@
 
+
+const tp_dificultad = Object.freeze({
+	1: 'FACIL',
+	2: 'MEDIO',
+	3: 'DIFICIL'
+
+});
+
 // Definición de la clase Receta:
 
 class Receta {
@@ -10,7 +18,7 @@ class Receta {
 			this.instrucciones = instrucciones;
 			this.comensales = comensales;
 			this.duracion = duracion;
-			this.dificultad = dificultad;
+			if(this.checkDificultad(dificultad)){ this.dificultad = dificultad; } else {throw "Error al insertar la receta, el tipo de dificultad no es valido";};
 			this.ingredientes = ingredientes;
 		} else {
 			throw "Los datos insertados no son correctos";
@@ -21,11 +29,26 @@ class Receta {
 	//Función para comprobar el tipo de datos recibidos
 	checkType(id_receta, titulo, instrucciones, duracion, dificultad, comensales, ingredientes) {
 		let succesful = false;
-		if ((typeof id_receta === 'number') && (typeof titulo === 'string') && (typeof comensales === 'number') && (typeof instrucciones === 'string') && (typeof duracion === 'number') && (typeof dificultad === 'string') && (Array.isArray(ingredientes))){
+		if ((typeof id_receta === 'number') && (typeof titulo === 'string')
+		 && (typeof comensales === 'number') && (typeof instrucciones === 'string') 
+		 && (typeof duracion === 'number') && (typeof dificultad === 'string') 
+		 && (Array.isArray(ingredientes))){
 			succesful= true;
 		} else { succesful = false;}
 
 		return succesful
+	}
+
+	checkDificultad(df) {
+		let exito = true;
+		let dificultad = Object.keys(tp_dificultad).find(
+			(id) => tp_dificultad[id] === df
+		);
+
+		if (dificultad == undefined) {
+			exito = false;
+		}
+		return exito;
 	}
 
 	get_id(){
@@ -42,5 +65,7 @@ class Receta {
 	}
 
 }
+
+
 
 module.exports = Receta;
