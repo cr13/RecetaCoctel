@@ -27,6 +27,6 @@ RUN npm install grunt-cli && grunt install
 
 ENV PATH=/node_modules/.bin:$PATH
 
-EXPOSE 3013
+EXPOSE 3010
 
 CMD ["grunt","start"]
