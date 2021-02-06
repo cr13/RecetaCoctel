@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-// const port = 3001
+var path = require('path');
+var favicon = require('serve-favicon');
 const morgan = require('morgan');
 const dataRoutes = require('./routes/recetas');
 
@@ -10,10 +11,15 @@ const client = new Etcd3();
 
 let port = process.env.PORT || 3010;
 app.set('json spaces', 2);
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
 
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
+
 
 async function getPort() {
   const port = await client.get('RecetaAppPort');
