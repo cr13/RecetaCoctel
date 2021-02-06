@@ -1,0 +1,169 @@
+doctype html
+html(lang='es')
+  head
+    title=title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.6/css/fileinput.min.css')
+    link(rel='stylesheet', href='stylesheets/style.css')
+    
+  body    
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            .center-text
+              a.navbar-brand(href='/') RecetasCoctel
+          ul#barAdmin.nav.navbar-nav.navbar-left.ocultar-div
+            li.active(style='display: none;')
+              a(href='#') Inicio
+            li.actinavactive
+              a(href='/recetas') Recetas 
+          ul.nav.navbar-nav.navbar-right
+            li.dropdown.namebar
+                b#Namelogueado.color-light 
+            li#logoutdiv.dropdown.ocultar-div
+              a#logout.dropdown-toggle(href='#')
+                i.fa.fa-cogs
+                b Cerrar sesión
+            li#login.dropdown.ocultar-div
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-cogs
+                b.color-blue Login
+                span.caret
+              ul#login-dp.dropdown-menu.login-panel
+                li
+                  .dropdown-header
+                    span.login-header.color-blue.text-center Inicia Sesión
+                    //span.forgot-password.color-blue
+                    //  a(href='') Forgot password?
+                  .clearfix
+                  div
+                    form#loginform.form-horizontal(role='form', autocomplete='off')
+                      .input-group(style='margin-bottom: 10px')
+                        span.input-group-addon
+                          i.glyphicon.glyphicon-user.color-blue
+                        // USERNAME OR EMAIL ADDRESS
+                        input#login-username.form-control(type='text', name='username', value='', placeholder='username', pattern='[a-zA-Z0-9]{4,}', title='Mínimo 4 letras o números.', oninvalid="this.setCustomValidity('Nick incorrecto')", oninput="setCustomValidity('')", required='')
+                      .input-group(style='margin-bottom: 10px')
+                        span.input-group-addon
+                          i.glyphicon.glyphicon-lock.color-blue
+                        // PASSWORD
+                        input#login-password.form-control(type='password', name='passwords', placeholder='password', pattern='.{4,}', title='Mínimo 4 letras o números.', oninvalid="this.setCustomValidity('Clave incorrecta')", oninput="setCustomValidity('')", required='')
+                      .center-text
+                        label
+                          input#login-remember(type='checkbox', name='remember', value='1')
+                          |  Recuérdame
+                      .left-text
+                        span.error-message.color-red
+                          i.glyphicon.glyphicon-warning-sign
+                          |  ¡El nombre de usuario y la contraseña no existen!
+                      .form-group(style='margin-top:10px')
+                        // Button
+                        .col-sm-12.controls.center-text
+                          button#btn-login.btn.btn-block.btn-success(type='submit') Iniciar
+                          // <a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>
+                // <li class="divider"></li>
+                div.bottom.text-center
+                  | ¿Nuevo aquí? 
+                  a(href='/registro')
+                    b Registrate!!
+    .container-fluid.text-center
+      .row.content
+        .col-sm-2.sidenav
+          div#publi
+            
+        #contenedorPrincipal.col-sm-8.text-left.center-screen 
+          //- block content
+          .col-12
+
+            p.title RecetasCoctel
+          .col-12
+    
+            #custom-search-input
+              .input-group
+               form.card.card-sm
+                input.search-query.form-control(type='text' placeholder='Search')
+                span.input-group-btn
+                  //- button.btn.btn-lg.btn-success(type='submit')
+                  button(type='button')
+                    span.fa.fa-search
+             
+    footer.container-fluid.text-center
+      p Copyright 2021 RecetasCoctel | Todos los derechos reservados
+
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.3.6/js/fileinput.min.js')
+
+    block script
+    script.
+      $(document).ready(function(){
+        
+        $('#logoutdiv').hide();
+
+        //- logeado();
+        //- $(".error-message").hide();
+        //- $("#loginform").submit(function(e){
+        //-   e.preventDefault()
+        //-   $.ajax({
+        //-     type:"POST",
+        //-     url:"/apis/login",
+        //-     data:$("#loginform").serialize(),
+        //-     dataType:"json",
+        //-     success:function(data){
+        //-       //localStorage.token=data.username;
+        //-       window.localStorage.setItem('token', data.token);
+        //-       //httpChannel.setRequestHeader("X-Hello", "World", false);
+        //-       logeado();
+        //-       vaciarCampos();
+        //-     },
+        //-     error:function(data){
+        //-       $(".error-message").show();
+        //-       vaciarCampos();
+        //-       //alert("error "+data.responseJSON.mensaje)
+        //-     }
+            
+        //-   })
+        //- })
+        //- function vaciarCampos(){
+        //-     $("#login-username").val("");
+        //-     $("#login-password").val("");
+            
+        //-   }
+        //- function logeado(){
+        //-   var token = window.localStorage.getItem('token');
+        //-   if(token!= null){
+        //-     $('#login').hide();
+        //-     var payload = token.split('.')[1];
+        //-     payload = window.atob(payload);
+        //-     payload = JSON.parse(payload);
+        //-     //alert(JSON.stringify(payload));
+        //-     $('#Namelogueado').text('Bienvenido '+ payload.name )
+        //-     $('#Namelogueado').show();
+        //-     //alert(JSON.stringify(payload.tipo_usu))
+        //-     if(payload.tipo_usu=="Admin")
+        //-         $('#barAdmin').show();
+        //-     $('#logoutdiv').show();
+        //-   }else{
+        //-     $('#barAdmin').hide();
+        //-     $('#login').show();
+        //-     $('#logoutdiv').hide();
+        //-   }
+        //- }
+        //- $('#logout').click(function() {
+        //-     window.localStorage.removeItem('token');
+        //-     $('#Namelogueado').hide();
+        //-     $('#logoutdiv').hide();
+        //-     $('#login').show();
+        //-     $('#barAdmin').hide();            
+        //- })
+      })
