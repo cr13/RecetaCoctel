@@ -1,1 +1,1 @@
-web: grunt start
+web: node app.js
