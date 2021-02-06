@@ -8,3 +8,6 @@ log
 
 # variables de entorno
 .env
+
+# Fichero de log generado por taurus
+.jmeter.log
