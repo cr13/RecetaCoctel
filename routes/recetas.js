@@ -10,6 +10,12 @@ let listIngredientes = new controllerIng();
 let controllerRecetas = new ControllerReceta();
 
 
+router.get('/', function (req, res) {
+
+    res.render('index', { title: "RecetasCoctel" });
+});
+
+
 router.get("/recetas", (req, res) => {
     try {
         let data = controllerRecetas.getRecetas();
