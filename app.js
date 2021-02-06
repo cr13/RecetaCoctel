@@ -8,7 +8,7 @@ const { Etcd3 } = require('etcd3');
 
 const client = new Etcd3();
 
-let port = process.env.port || 3010;
+let port = process.env.PORT || 3010;
 app.set('json spaces', 2);
 
 app.use(morgan('dev'));
