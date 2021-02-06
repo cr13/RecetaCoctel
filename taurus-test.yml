@@ -1,0 +1,15 @@
+execution:
+- concurrency: 100
+  ramp-up: 30s
+  hold-for: 1m
+  scenario: recetasCoctel
+
+scenarios:
+  recetasCoctel:    
+    default-address: http://localhost:8080
+    timeout: 5s
+    requests:
+      - url: /recetas
+        method: GET
+        headers:
+          Content-Type: application/json
