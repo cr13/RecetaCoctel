@@ -10,4 +10,7 @@ log
 .env
 
 # Fichero de log generado por taurus
-.jmeter.log
+jmeter.log
+
+#Directorios generados por taurus
+2021-*
