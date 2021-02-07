@@ -11,6 +11,8 @@ RUN apk add --no-cache nodejs npm \
     && adduser -u 1000 -G node -s /bin/sh -D cr13 \ 
     && mkdir -p /app/node_modules \
     && mkdir -p /app/src \
+    && mkdir -p /app/views \
+    && mkdir -p /app/public \
     && mkdir -p /app/routes \
     && chown -R cr13:node /app
 
@@ -21,6 +23,9 @@ COPY --chown=cr13:node ["package*.json", "Gruntfile.js",".jshintrc", "app.js", "
 
 COPY --chown=cr13:node ["src", "./src"]
 COPY --chown=cr13:node ["routes", "./routes"]
+COPY --chown=cr13:node ["public", "./public"]
+COPY --chown=cr13:node ["views", "./views"]
+
 
 
 RUN npm install grunt-cli && grunt install
