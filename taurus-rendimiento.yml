@@ -1,14 +1,8 @@
 execution:
-  - scenario: recetasCoctel
-    concurrency: 100
-    ramp-up: 30s
-    hold-for: 1m
-  
-  # - scenario: recetasCoctelheroku
-  #   concurrency: 100
-  #   ramp-up: 30s
-  #   hold-for: 1m
-
+- concurrency: 100
+  ramp-up: 30s
+  hold-for: 1m
+  scenario: recetasCoctel
 
 scenarios:
   recetasCoctel:    
@@ -19,21 +13,3 @@ scenarios:
         method: GET
         headers:
           Content-Type: application/json
-  
-          recetasCoctel:    
-    default-address: http://localhost:3013
-    timeout: 5s
-    requests:
-      - url: /recetas
-        method: GET
-        headers:
-          Content-Type: application/json
-   
-  # recetasCoctelheroku:    
-  #   default-address: https://recetacoctel.herokuapp.com/
-  #   timeout: 5s
-  #   requests:
-  #     - url: /recetas
-  #       method: GET
-  #       headers:
-  #         Content-Type: application/json
