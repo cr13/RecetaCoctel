@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: deploy.Dockerfile
     ports:
-         - "3013:3010"
+         - "${HTTP_PORT}:3010"
 
   recetas_aux:
     container_name: recetas_aux
@@ -15,7 +15,7 @@ services:
       context: .
       dockerfile: deploy.Dockerfile
     ports:
-         - "3014:3010"
+         - "${HTTP_PORT1}:3010"
 
   nginx:
     image: nginx:alpine
