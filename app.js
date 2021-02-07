@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 var path = require('path');
-var favicon = require('serve-favicon');
+// var favicon = require('serve-favicon');
 const morgan = require('morgan');
 const dataRoutes = require('./routes/recetas');
 
