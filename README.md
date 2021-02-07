@@ -60,6 +60,9 @@ Finalmente se añaden tres peticiones Get:
     2. Para testear el acceso al microsercio.
     3. Para testear el acceso a la replica del microsercio.
 
+
+En Travis hay que crear las tres variables de entorno que se utilizan. Para ello hay que pulsar en More options --> settings --> Environment Variables.
+
 #### Test de rendimiento realizado
 
 Para el testeo de rendimiento se ha utilizado la herramienta [taurus](https://gettaurus.org/).
