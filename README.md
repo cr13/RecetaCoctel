@@ -25,7 +25,7 @@ El microservicio recetascoctel se va ha servir en el puerto 3013 y su replica en
 
 **El segundo servicio**, ha sido nginx para el cual se ha utilizado la imagen nginx:alpine. Ya que esta imagen es la más optimizada y la había utilizado en otros proyectos. Además se han creado dos volumenes uno para la configuración del mismo y otro para log.
 
-Para la configuración de nginx se ha creado un fichero llamado [nginx.conf](./nginx.conf). En este fichero se ha creado con upstream dos servidores (Producción y una réplica) y se le ha asignado para llevar acabo el balanceo [ip_hash](http://nginx.org/en/docs/http/load_balancing.html), que consiste en crear una sesión presistente entre cliente y servidor. 
+Para la configuración de nginx se ha creado un fichero llamado [nginx.conf](./nginx.conf). En este fichero se hace uso de [upstream](http://nginx.org/en/docs/http/ngx_http_upstream_module.html), que se utiliza para crear un de grupos de servidores, en mi caso contiene dos servidores (Producción y una réplica) y se le ha asignado para llevar acabo el balanceo [ip_hash](http://nginx.org/en/docs/http/load_balancing.html), que consiste en crear una sesión presistente entre cliente y servidor. 
 
 El siguiente paso es definir el puerto de escucha, los dos ficheros de log que se van a generar uno para los accesos y otro para los errores. Además definimos las redirecciones proxy que queremos que nginx ejecute y configuración de dicho proxy.
 
@@ -39,7 +39,7 @@ Para los dos microservicios se ha utilizado el dockerfile deploy.Dockerfile para
 
 El otro servicio es nginx el cual va utilizar la image: nginx:alpine como se ha comentado en el punto anterior, se van a crear dos volumes para la configuración y para los logs. Se incluye la referencia "link" a los dos microservicios a balancear y se define y mapea el puerto de escucha a utilizar en este caso  el 8080.
 
-Ver comosición del docker-compose [aquí](./docker-compose.yml).
+Ver composición del docker-compose [aquí](./docker-compose.yml).
 
 Para su ejecución:
 
