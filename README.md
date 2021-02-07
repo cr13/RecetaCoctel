@@ -16,7 +16,7 @@ Finalmente, por hacer algo con sentido para utilizar docker-compose para la ejec
 
 Como se ha dicho en el punto anterior, se han creado 3 microservicios, aunque uno es una replica.
 
-**El primer microservicio**, es el creado en el hito anterior. Este microservicio es el encargado de servir las recetas, ingredientes y valoraciones. Sobre el Dockerfile creado en el hito anterior se han realizado unas pequeñas modificaciónes, la primera ha sido la ejecución llamando a grunt start en vez de a grunt test. Ver [aquí](https://github.com/cr13/RecetaCoctel/commit/154bf88863fa8beb66b460a3abe3436904c269b9#diff-8b621a1fb64a284556b9cde1ba473777f543f8463d9e09105c5862fc9d3953fd). La segunda modificación que se ha realizado ha sido para añadir los directorios y cambios necesarios para mostrar un frontend básico para la ruta raíz. Ver [aquí]()
+**El primer microservicio**, es el creado en el entrega anterior. Este microservicio es el encargado de servir las recetas, ingredientes y valoraciones. Sobre el Dockerfile creado en el entrega anterior se han realizado unas pequeñas modificaciónes, la primera ha sido la ejecución llamando a grunt start en vez de a grunt test. Ver [aquí](https://github.com/cr13/RecetaCoctel/commit/154bf88863fa8beb66b460a3abe3436904c269b9#diff-8b621a1fb64a284556b9cde1ba473777f543f8463d9e09105c5862fc9d3953fd). La segunda modificación que se ha realizado ha sido para añadir los directorios y cambios necesarios para mostrar un frontend básico para la ruta raíz. Ver [aquí]()
 
 El microservicio recetascoctel se va ha servir en el puerto 3013 y su replica en el 3014.
 
@@ -53,7 +53,7 @@ docker-compose up
 
 #### Test utilizando Integración Continua
 
-Para este test se ha utilizado Travis. Para ello se ha modificado el fichero [.travis.yml](./.travis.yml) creado en hitos anteriores añadiendo las lineas que podemos ver en este [commit](https://github.com/cr13/RecetaCoctel/commit/879c248ed5e3537ba3a87070a0f6d4ebe9c34dd5#diff-6ac3f79fc25d95cd1e3d51da53a4b21b939437392578a35ae8cd6d5366ca5485). 
+Para este test se ha utilizado Travis. Para ello se ha modificado el fichero [.travis.yml](./.travis.yml) creado en entregas anteriores añadiendo las lineas que podemos ver en este [commit](https://github.com/cr13/RecetaCoctel/commit/879c248ed5e3537ba3a87070a0f6d4ebe9c34dd5#diff-6ac3f79fc25d95cd1e3d51da53a4b21b939437392578a35ae8cd6d5366ca5485). 
 
 Finalmente se añaden tres peticiones Get:
     1. Para testear el acceso a través del servicio nginx.
@@ -98,7 +98,7 @@ La aplicación se puede visitar en [recetacoctel.herokuapp.com/](https://recetac
  
 ## Avance del proyecto
 
-- Se han corregido las sugerencias en la corrección del hito anterior.
+- Se han corregido las sugerencias en la corrección del entrega anterior.
     - Correspondiente a la issue [Comprobar todos los tipos que se pueda](https://github.com/cr13/RecetaCoctel/issues/35)
 
 - Se ha creado un frontend básico para que al acceder a través de heroku se vea que el delpligue esta funcionando correctamente.
