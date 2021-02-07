@@ -97,14 +97,16 @@ La aplicación se puede visitar en [recetacoctel.herokuapp.com/](https://recetac
 
  
 ## Avance del proyecto
-    - Se han corregido las sugerencias en la corrección del hito anterior.
-        - Correspondiente a la issue [Comprobar todos los tipos que se pueda](https://github.com/cr13/RecetaCoctel/issues/35)
-    - Se ha creado un frontend básico para que al acceder a través de heroku se vea que el delpligue esta funcionando correctamente.
-        [Vista](https://github.com/cr13/RecetaCoctel/commit/be76ad734219a029217a3b626b6f4f8805ceb12a) desarrollada en Jade.
-        [Hoja de estilo](https://github.com/cr13/RecetaCoctel/commit/da24b5604d14e57e7e346aa8062457c2a785089e)        
-        Actualización de [app.js](https://github.com/cr13/RecetaCoctel/commit/e702db4fbdbd3c3b6ff731a05994c1d95ced6c96) para que utilice jade y dar acceso a la hoja de estilos.
-        Instalación de los paquetes necesarios ver en [package.json](https://github.com/cr13/RecetaCoctel/commit/41c3ce9c612632d6bfedb9efde05246fc88df4cb).
-        Se crear [ruta raíz](https://github.com/cr13/RecetaCoctel/commit/5690b1a9866c9aa5c0d143d6184bf4ebef110cde).
+
+- Se han corregido las sugerencias en la corrección del hito anterior.
+    - Correspondiente a la issue [Comprobar todos los tipos que se pueda](https://github.com/cr13/RecetaCoctel/issues/35)
+
+- Se ha creado un frontend básico para que al acceder a través de heroku se vea que el delpligue esta funcionando correctamente.
+    - [Vista](https://github.com/cr13/RecetaCoctel/commit/be76ad734219a029217a3b626b6f4f8805ceb12a) desarrollada en Jade.
+    - [Hoja de estilo](https://github.com/cr13/RecetaCoctel/commit/da24b5604d14e57e7e346aa8062457c2a785089e)        
+    - Actualización de [app.js](https://github.com/cr13/RecetaCoctel/commit/e702db4fbdbd3c3b6ff731a05994c1d95ced6c96) para que utilice jade y dar acceso a la hoja de estilos.
+    - Instalación de los paquetes necesarios ver en [package.json](https://github.com/cr13/RecetaCoctel/commit/41c3ce9c612632d6bfedb9efde05246fc88df4cb).
+    - Se crear [ruta raíz](https://github.com/cr13/RecetaCoctel/commit/5690b1a9866c9aa5c0d143d6184bf4ebef110cde).
 
 <!--
 - Lo primero que se ha realizado ha sido añadir el control de tipos en los parámetros de las clases.
