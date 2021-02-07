@@ -67,7 +67,7 @@ En Travis hay que crear las tres variables de entorno que se utilizan. Para ello
 
 Para el testeo de rendimiento se ha utilizado la herramienta [taurus](https://gettaurus.org/).
 
-Siguiendo los pasos que indica en su web oficial, se ha creado el fichero [taurus-test.yml] (https://github.com/cr13/RecetaCoctel/commit/aca680c43e158479914f71e8b0c0759935e1ade2#diff-8c7244f9a89fcbccf635ca7aed8d22c4a617c27adc7edbc1452111f71e4b6659)
+Siguiendo los pasos que indica en su web oficial, se ha creado el fichero [taurus-rendimiento.yml] (https://github.com/cr13/RecetaCoctel/commit/aca680c43e158479914f71e8b0c0759935e1ade2#diff-8c7244f9a89fcbccf635ca7aed8d22c4a617c27adc7edbc1452111f71e4b6659)
 
 El cual va ha realizar un test con una concurrencia de 100 peticiones durante un minuto, obteniendo el siguiente resultado:
 
