@@ -16,7 +16,7 @@ Finalmente, por hacer algo con sentido para utilizar docker-compose para la ejec
 
 Como se ha dicho en el punto anterior, se han creado 3 microservicios, aunque uno es una replica.
 
-**El primer microservicio**, es el creado en el entrega anterior. Este microservicio es el encargado de servir las recetas, ingredientes y valoraciones. Sobre el Dockerfile creado en el entrega anterior se han realizado unas pequeñas modificaciónes, la primera ha sido la ejecución llamando a grunt start en vez de a grunt test. Ver [aquí](https://github.com/cr13/RecetaCoctel/commit/154bf88863fa8beb66b460a3abe3436904c269b9#diff-8b621a1fb64a284556b9cde1ba473777f543f8463d9e09105c5862fc9d3953fd). La segunda modificación que se ha realizado ha sido para añadir los directorios y cambios necesarios para mostrar un frontend básico para la ruta raíz. Ver [aquí]()
+**El primer microservicio**, es el creado en el entrega anterior. Este microservicio es el encargado de servir las recetas, ingredientes y valoraciones. Sobre el Dockerfile creado en el entrega anterior se han realizado unas pequeñas modificaciónes, la primera ha sido la ejecución llamando a grunt start en vez de a grunt test. Ver [aquí](https://github.com/cr13/RecetaCoctel/commit/154bf88863fa8beb66b460a3abe3436904c269b9#diff-8b621a1fb64a284556b9cde1ba473777f543f8463d9e09105c5862fc9d3953fd). La segunda modificación que se ha realizado ha sido para añadir los directorios y cambios necesarios para mostrar un frontend básico para la ruta raíz. Ver [aquí](https://github.com/cr13/RecetaCoctel/commit/8be62e4525fe461333f968663794ed0624adc05c)
 
 El microservicio recetascoctel se va ha servir en el puerto 3013 y su replica en el 3014.
 
@@ -67,7 +67,7 @@ En Travis hay que crear las tres variables de entorno que se utilizan. Para ello
 
 Para el testeo de rendimiento se ha utilizado la herramienta [taurus](https://gettaurus.org/).
 
-Siguiendo los pasos que indica en su web oficial, se ha creado el fichero [taurus-rendimiento.yml] (https://github.com/cr13/RecetaCoctel/commit/aca680c43e158479914f71e8b0c0759935e1ade2#diff-8c7244f9a89fcbccf635ca7aed8d22c4a617c27adc7edbc1452111f71e4b6659)
+Siguiendo los pasos que indica en su web oficial, se ha creado el fichero [taurus-rendimiento.yml](https://github.com/cr13/RecetaCoctel/commit/aca680c43e158479914f71e8b0c0759935e1ade2#diff-8c7244f9a89fcbccf635ca7aed8d22c4a617c27adc7edbc1452111f71e4b6659)
 
 El cual va ha realizar un test con una concurrencia de 100 peticiones durante un minuto, obteniendo el siguiente resultado:
 
@@ -92,7 +92,7 @@ upstream recetascotelservice {
 
 Para el despliegue se ha utilizado una plataforma Paas, en concreto [Heroku](https://dashboard.heroku.com/). Se ha desplegado de dos formas distintas, una subiendo la aplicación y ejecutandola, y la otra forma creando y usando contenedores. Ver [aquí.](https://cr13.github.io/RecetaCoctel/heroku.html)
 
-La aplicación se puede visitar en [recetacoctel.herokuapp.com/](https://recetacoctel.herokuapp.com/)
+Finalmente la versión que se ha dejado desplegada es mediante uso de contenedor docker que se puede visitar en [recetacoctel.herokuapp.com/](https://recetacoctel.herokuapp.com/)
 
 
  
